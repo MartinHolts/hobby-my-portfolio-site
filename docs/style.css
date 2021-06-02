@@ -1,0 +1,114 @@
+body {
+	margin-top: 0;
+    margin-right: auto;
+	margin-bottom: 0;
+    margin-left: auto;
+    background-color: #F2F2F2;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 14px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 14px;
+	background-color: #F2F2F2;
+}
+.headerLeft {
+	display: flex;
+}
+.headerRight {
+	display: flex;
+}
+header a {
+	font-size: 18px;
+	text-decoration: none;
+	outline: none;
+	font-family: "Neue Haas","Helvetica Neue","Helvetica","Arial",sans-serif;
+    transition: all 0.3s;
+	color: #3A4024; 
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: transparent;
+}
+header a:hover {
+    border-color: #586A8C;
+}
+.headerRight > a:not(:first-of-type) {
+	margin-left: 14px;
+}
+.active {
+    border-color: #586A8C;
+}
+hr {
+	border-color: #9EA660;
+	margin: 0;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+content {
+	display: block;
+    max-width: 1200px;
+	height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: #F2F2F2;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+h2 {
+	font-family: "Neue Haas","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 500;
+}
+h3 {
+	font-family: "Neue Haas","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 500;
+	margin: 0;
+}
+h4 {
+	font-family: "Neue Haas","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 500;
+	margin: 0;
+}
+p {
+	font-family: "Neue Haas","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 500;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+a {
+	margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Neue Haas","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.project-box {
+	display: flex;
+    align-items: flex-start;
+}
+
+.project-box img {
+	margin-right: 20px;
+}
+.project-box h4 {
+	margin-top: 20px;
+}
+h4 {
+	color: #586A8C;
+}
+.about-me {
+	margin-top: 40px;
+	margin-bottom: ´20px;
+}
+/*
+#586A8C    Blue
+#3A4024    Dark Brown
+#9EA660    Light Brown
+#F2F2F2    White
+#0D0D0D    Black
+*/

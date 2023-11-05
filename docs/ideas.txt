@@ -1,0 +1,21 @@
+CV alla lühike lugu kaasa.
+
+Esilehele
+Pealkiri
+Front-end Developer jne.
+Midagi taolist:
+Frontend Developer with 3+ years of experience in building responsive and user-friendly web applications using React and Bootstrap.
+
+
+Highlight your skills and experience. What are your strengths as a developer? What technologies are you proficient in?
+What kind of projects have you worked on? Be sure to highlight your most relevant skills and experience in your headline.
+
+I am passionate about developing programming. I like creating hobby projects on github.
+I am interested in new technologies like AI 
+
+
+Äkki lisa antud investeerija iseloomu küsitluse vastused. Või vähemalt selle põhjal küsi ChatGPTlt ja Bardilt, mida lisada.
+Äkki saab sealt mingid iseloomu jooned või midagi. Või kuidas mulle koodi meeldib kirjutada.
+
+Lisada, et olen metoodiline HTML ja CSS-iga jne. Iga CS all oleva töö kohta lisa info.
+CV teha lühikesemaks ja lisada iga töö koha alla rohkem.

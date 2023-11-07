@@ -19,3 +19,39 @@ I am interested in new technologies like AI
 
 Lisada, et olen metoodiline HTML ja CSS-iga jne. Iga CS all oleva töö kohta lisa info.
 CV teha lühikesemaks ja lisada iga töö koha alla rohkem.
+
+Home/About Me Page: Introduce yourself and provide a brief overview of your background, skills, and experiences.
+
+I have mostly worked as Front-End developer. I know how to methodically write everything in HTML, CSS. 
+I know how to write everything in javascript, but still working out best methology for each case.
+I can figure out how to write everything in PHP, but haven't done everything yet in practice.
+
+Olen lõpetanud Põltsamaa Ühisgümnaasiumi reaalklassi, mis andis mulle tugeva aluse karjääri jätkamiseks infotehnoloogia valdkonnas.
+Mul oli au kuuluda Cleveroni toetatud esimesse klassi, kus olulist rolli mängis praktiline õpe tööstuse professionaalide juhendamisel.
+Lisaks õpingutele olen pühendunud mitmetele isiklikele programmeerimisprojektidele, lähenedes igale neist põhjaliku tähelepanu ja meetodilise mõtteviisiga.
+
+
+
+Home/About Me Page: Introduce yourself and provide a brief overview of your background, skills, and experiences.
+
+Projects: Showcase your coding projects, including descriptions, technologies used, and any relevant links (live demo, GitHub repo, etc.). Make sure to highlight the unique challenges you faced and how you overcame them.
+
+Resume/CV: Provide a downloadable version of your resume/CV for easy access.
+
+Skills: List your technical skills, programming languages, frameworks, and tools you are proficient in.
+
+Testimonials/Recommendations: If you have received positive feedback or testimonials from clients or colleagues, consider displaying them to build credibility.
+
+Blog: Share your thoughts, experiences, and insights on various tech topics to demonstrate your expertise and passion for coding.
+
+Contact Information: Make it easy for visitors to get in touch with you by providing a contact form or links to your social media profiles and professional platforms.
+
+Responsive Design: Ensure your site is optimized for various devices, including mobile phones and tablets.
+
+Clean and User-Friendly Interface: Use a clean and intuitive design that highlights your work without overwhelming the visitor.
+
+Call-to-Action (CTA): Encourage visitors to take action, such as reaching out to you for collaborations or exploring your projects further.
+
+Personal Touch: Infuse your personality into the site to make it unique and memorable. This can be achieved through your writing style, design choices, or even a personal blog section.
+
+Contribution to Open Source: If you have contributed to any open-source projects, mention them to demonstrate your commitment to the coding community.

@@ -30,7 +30,24 @@ Olen lõpetanud Põltsamaa Ühisgümnaasiumi reaalklassi, mis andis mulle tugeva
 Mul oli au kuuluda Cleveroni toetatud esimesse klassi, kus olulist rolli mängis praktiline õpe tööstuse professionaalide juhendamisel.
 Lisaks õpingutele olen pühendunud mitmetele isiklikele programmeerimisprojektidele, lähenedes igale neist põhjaliku tähelepanu ja meetodilise mõtteviisiga.
 
+Ma läksin programmeerimist õppima, kuna kõik karjääri testid keskkoolis soovitasid programeerimist õppima minna.
+Olin keskkoolis juba varem vennaga mänge programmeerinud ja kodulehe teinud ja programmeerimine tundus täitsa lõbus.
 
+Läksin VICTA-sse edasi õppima peale keskkooli. Victa oli enda ala ekpertide poolt läbi viidud väga praktilisel viisil ja toeatud Cleveroni poolt.
+Suur soovitus oli iseseisvalt õppimisel, mida alati olen proovinud alati praktiseerida sellest saati.
+Läksin peale VICTA-t edasi õppima Tallinna Ülikooli, kuna tundus, et jäi oskustest puudu.
+Tallinna Ülikool jäi pooleli peale pooltteist aastat.
+
+Õppisin mõlemas koolis väga palju Front-End asju. Samas õppisin ka Back-End asju ja üldist programmeerimist.
+
+Siis otsisin tööd ja läbisin koolitusi ja täiendasin ennast iseseisvalt, kuni leidsin töö Front-End kohal Regist OÜ-s.
+Seal anti mulle vatutusrikkaid töid, kuna tegin oma tööd kvaliteetselt ja detailselt aga samal ajal suurt pilti simal pidades.
+Tegin ScoreStoryBook lehel headeri, footeri, pealehe, müügilehe ja sisse logimise lehe tegemine.
+Õppisin pidevalt töö kõrvalt iseseisvalt juurde kõik vajalikud oskused, mis puudu olid.
+Kirjutasin koodi suures Wordpress projekis, kus pidin funktsioone ja infot erinevate failide vahel kutsuma ja kirjutama koodi paljudes failides kus oli üle 50 tuhande rea koodi.
+Tegin pidevalt koostööd Back-Endiga ja kasutasin Jira-t, et igapäevastest tulemustest täpselt teada anda.
+
+Peale Register OÜ-d läksin tööle A.L.M. Automotive OÜ-sse.
 
 Home/About Me Page: Introduce yourself and provide a brief overview of your background, skills, and experiences.
 

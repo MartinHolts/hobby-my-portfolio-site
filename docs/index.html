@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Martin Holtsmeier</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="javascript.js"></script>
 	<link rel="icon" href="images/favicon-32x32.png" type="image/gif" sizes="32x32">
 </head>
 
@@ -16,15 +15,23 @@
 			<a class="active" href="index.html">Martin Holtsmeier / Avaleht</a>
 		</div>
 		<div class="headerRight">
-			<a href="projektid.html">Projektid</a>
-			<a href="minust.html">Minust</a>
-			<a href="cv.html">CV</a>
-			<a href="kontakteeru.html">Kontakteeru</a>
+			<a href="#minust">Minust</a>
+			<a href="#projektid">Projektid</a>
+			<a href="#kontakteeru">Kontakteeru</a>
 		</div>
 	</header>
 	<hr>
 	<main>
-		<section class="project-section">
+		<section id="minust" class="about-me">
+			<h2>Minust</h2>
+			<h4>Koodi kirjutamise põhimõtted</h4>
+			<p>Soovin koodi kirjutades alati parima valiku valida, mitte esimese mis töötab. Samuti soovin koodi luua
+				süstemaatiliselt, et kood oleks paremini mõistetav. Samuti kirjutan alati puhast koodi ja proovin
+				muutujad
+				võimalikult arusaadavalt nimetada, et kood oleks lihtsamini loetav.</p>
+		</section>
+
+		<section id="projektid" class="project-section">
 			<h2>Projektid</h2>
 			<div class="project-box">
 				<img src="images/teeOmaPiduSmall.png" alt="Tee oma pidu veebileht">
@@ -49,7 +56,7 @@
 			</div>
 		</section>
 
-		<section class="example-projects">
+		<section id="projektid" class="example-projects">
 			<h1>Example Projects</h1>
 			<div class="projects">
 				<h2>HTML, CSS, JavaScript</h2>
@@ -104,16 +111,9 @@
 				</ul>
 			</div>
 		</section>
-
-		<section class="about-me">
-			<h2>Minust</h2>
-			<h4>Koodi kirjutamise põhimõtted</h4>
-			<p>Soovin koodi kirjutades alati parima valiku valida, mitte esimese mis töötab. Samuti soovin koodi luua
-				süstemaatiliselt, et kood oleks paremini mõistetav. Samuti kirjutan alati puhast koodi ja proovin
-				muutujad
-				võimalikult arusaadavalt nimetada, et kood oleks lihtsamini loetav.</p>
-		</section>
 	</main>
+
+	<script src="javascript.js"></script>
 </body>
 
 </html>

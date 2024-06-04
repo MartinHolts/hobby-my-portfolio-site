@@ -93,19 +93,18 @@
 			</div>
 		</section>
 
-		<section id="kontakteeru">
-			<h3>Kontakteeru</h3>
-			<p>Võta ühendust.</p>
+		<section id="kontakteeru" class="contact-section">
+			<h3>Contact</h3>
+			<p>Get in touch.</p>
 			<form action="/action_page.php" target="_blank">
-				<input type="text" placeholder="Nimi" required="" name="Name">
-				<input type="text" placeholder="E-post" required="" name="Email">
-				<input type="text" placeholder="Teema" required="" name="Subject">
-				<input type="text" placeholder="Kommentaar" required="" name="Comment">
-				<button type="submit">
-					<i class="fa fa-paper-plane"></i> SAADA SÕNUM
-				</button>
+				<input type="text" placeholder="Name" required name="Name">
+				<input type="email" placeholder="Email" required name="Email">
+				<input type="text" placeholder="Subject" required name="Subject">
+				<textarea placeholder="Message" required name="Message"></textarea>
+				<button type="submit">Send Message</button>
 			</form>
 		</section>
+
 	</main>
 
 	<script src="javascript.js"></script>

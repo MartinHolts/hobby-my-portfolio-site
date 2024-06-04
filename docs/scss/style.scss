@@ -1,0 +1,184 @@
+// Define variables for colors and other reusable values
+$primary-color: #3A4024;
+$secondary-color: #586A8C;
+$border-color: #9EA660;
+$background-color: #F2F2F2;
+$text-color: #333;
+
+// Reset global styles
+body {
+    padding: 0;
+    margin: 0;
+    color: $text-color;
+    background-color: $background-color;
+    font-family: "Neue Haas", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 2px solid $border-color;
+    background-color: $background-color;
+
+    a {
+        padding-bottom: 2px;
+        border-bottom: 2px solid transparent;
+        color: $primary-color;
+        transition: border-color 0.3s;
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover {
+            border-color: $secondary-color;
+        }
+    }
+
+   .headerRight > a:not(:first-of-type) {
+        margin-left: 20px;
+    }
+
+    &.active a {
+        border-color: $secondary-color;
+    }
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 2px solid $border-color;
+}
+
+main {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.project-section,.example-projects,.about-me {
+    margin-bottom: 40px;
+}
+
+.project-box {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+        max-width: 200px;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+
+   .text-box h4 {
+        margin-top: 20px;
+        color: $secondary-color;
+    }
+}
+
+ul {
+    padding-left: 20px;
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            color: $secondary-color;
+            transition: color 0.3s;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4 {
+    color: $primary-color;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div.gallery {
+    float: left;
+    width: 180px;
+    margin: 5px;
+    border: 1px solid #ccc;
+
+    &:hover {
+        border: 1px solid #777;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+   .desc {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+// Contact section styles
+.contact-section {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+
+        &:focus {
+            border-color: $secondary-color;
+            outline: none;
+        }
+    }
+
+    form button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: $secondary-color;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: darken($secondary-color, 5%);
+        }
+    }
+}

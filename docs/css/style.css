@@ -1,10 +1,17 @@
-body {
+/* Global styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  color: #3A4024;
-  background-color: #F2F2F2;
-  font-family: "Neue Haas", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+body {
+  color: #333;
+  background-color: #F2F2F2;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -12,6 +19,10 @@ header {
   padding: 20px 40px;
   border-bottom: 2px solid #9EA660;
   background-color: #F2F2F2;
+}
+
+header {
+  color: black;
 }
 
 header a {
@@ -162,15 +173,7 @@ div.desc {
   background-color: #4CAF50;
 }
 
-/* Global styles  */
-body {
-  padding: 0;
-  margin: 0;
-  color: #333;
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-}
-
+/* Contact Form */
 .contact-section {
   max-width: 600px;
   padding: 20px;

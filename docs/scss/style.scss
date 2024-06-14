@@ -1,4 +1,4 @@
-$color-red: #FF0000;
+$mainBackGroundColor: #F2F2F2;
 
 /* Global styles */
 * {
@@ -8,7 +8,7 @@ $color-red: #FF0000;
 }
 body {
 	color: #333;
-	background-color: #F2F2F2;
+	background-color: $mainBackGroundColor;
 	font-family: Arial, sans-serif;
 }
 

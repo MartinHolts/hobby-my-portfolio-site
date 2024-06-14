@@ -1,3 +1,4 @@
+/* Color Variables */
 /* Global styles */
 * {
   box-sizing: border-box;
@@ -18,11 +19,8 @@ header {
   justify-content: space-between;
   padding: 20px 40px;
   border-bottom: 2px solid #9EA660;
-  background-color: #F2F2F2;
-}
-
-header {
   color: black;
+  background-color: #F2F2F2;
 }
 
 header a {

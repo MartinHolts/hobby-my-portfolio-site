@@ -1,18 +1,19 @@
 /* Color Variables */
-$color-background-main: #F2F2F2;
-$color-text-primary: #333;
-$color-border-primary: #9EA660;
-$color-text-link: #3A4024;
-$color-border-link-hover: #586A8C;
-$color-background-white: #fff;
-$color-shadow: rgba(0, 0, 0, 0.1);
-$color-border-gallery-hover: #777;
-$color-pagination-active: #4CAF50;
-$color-background-hover: #ddd;
-$color-form-border: #ccc;
-$color-form-border-focus: #586A8C;
-$color-button-background: #586A8C;
-$color-button-hover: #40556e;
+$background-main: #F2F2F2;
+$text-primary: #333;
+
+$border-primary: #9EA660;
+$text-link: #3A4024;
+$border-link-hover: #586A8C;
+$background-white: #fff;
+$shadow: rgba(0, 0, 0, 0.1);
+$border-gallery-hover: #777;
+$pagination-active: #4CAF50;
+$background-hover: #ddd;
+$form-border: #ccc;
+$form-border-focus: #586A8C;
+$button-background: #586A8C;
+$button-hover: #40556e;
 
 /* Global styles */
 * {
@@ -22,8 +23,8 @@ $color-button-hover: #40556e;
 }
 
 body {
-	color: $color-text-primary;
-	background-color: $color-background-main;
+	color: $text-primary;
+	background-color: $background-main;
 	font-family: Arial, sans-serif;
 }
 
@@ -33,22 +34,22 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 40px;
-	border-bottom: 2px solid $color-border-primary;
+	border-bottom: 2px solid $border-primary;
 	color: black;
-	background-color: $color-background-main;
+	background-color: $background-main;
 }
 
 header a {
 	padding-bottom: 2px;
 	border-bottom: 2px solid transparent;
-	color: $color-text-link;
+	color: $text-link;
 	transition: border-color 0.3s;
 	font-size: 18px;
 	text-decoration: none;
 }
 
 header a:hover {
-	border-color: $color-border-link-hover;
+	border-color: $border-link-hover;
 }
 
 .headerRight > a:not(:first-of-type) {
@@ -56,13 +57,13 @@ header a:hover {
 }
 
 .active {
-	border-color: $color-border-link-hover;
+	border-color: $border-link-hover;
 }
 
 hr {
 	margin: 0;
 	border: none;
-	border-top: 2px solid $color-border-primary;
+	border-top: 2px solid $border-primary;
 }
 
 main {
@@ -80,8 +81,8 @@ main {
 	align-items: flex-start;
 	padding: 20px;
 	border-radius: 8px;
-	background-color: $color-background-white;
-	box-shadow: 0 2px 4px $color-shadow;
+	background-color: $background-white;
+	box-shadow: 0 2px 4px $shadow;
 }
 
 .project-box img {
@@ -92,7 +93,7 @@ main {
 
 .text-box h4 {
 	margin-top: 20px;
-	color: $color-border-link-hover;
+	color: $border-link-hover;
 }
 
 ul {
@@ -104,18 +105,18 @@ ul li {
 }
 
 ul li a {
-	color: $color-border-link-hover;
+	color: $border-link-hover;
 	transition: color 0.3s;
 	font-size: 16px;
 	text-decoration: none;
 }
 
 ul li a:hover {
-	color: $color-text-link;
+	color: $text-link;
 }
 
 h1, h2, h3, h4 {
-	color: $color-text-link;
+	color: $text-link;
 	font-weight: 500;
 }
 
@@ -127,19 +128,19 @@ p {
 .about-me {
 	padding: 20px;
 	border-radius: 8px;
-	background-color: $color-background-white;
-	box-shadow: 0 2px 4px $color-shadow;
+	background-color: $background-white;
+	box-shadow: 0 2px 4px $shadow;
 }
 
 div.gallery {
 	float: left;
 	width: 180px;
 	margin: 5px;
-	border: 1px solid $color-form-border;
+	border: 1px solid $form-border;
 }
 
 div.gallery:hover {
-	border: 1px solid $color-border-gallery-hover;
+	border: 1px solid $border-gallery-hover;
 }
 
 div.gallery img {
@@ -166,11 +167,11 @@ div.desc {
 
 .pagination a.active {
 	color: white;
-	background-color: $color-pagination-active;
+	background-color: $pagination-active;
 }
 
 .pagination a:hover:not(.active) {
-	background-color: $color-background-hover;
+	background-color: $background-hover;
 }
 
 .content {
@@ -183,7 +184,7 @@ div.desc {
 
 .pagination a.clicked {
 	color: white;
-	background-color: $color-pagination-active;
+	background-color: $pagination-active;
 }
 
 /* Contact Form */
@@ -207,14 +208,14 @@ div.desc {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 15px;
-	border: 1px solid $color-form-border;
+	border: 1px solid $form-border;
 	border-radius: 5px;
 	transition: border-color 0.3s;
 }
 
 .contact-section form input:focus,
 .contact-section form textarea:focus {
-	border-color: $color-form-border-focus;
+	border-color: $form-border-focus;
 	outline: none;
 }
 
@@ -224,11 +225,11 @@ div.desc {
 	border: none;
 	border-radius: 5px;
 	color: #fff;
-	background-color: $color-button-background;
+	background-color: $button-background;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .contact-section form button:hover {
-	background-color: $color-button-hover;
+	background-color: $button-hover;
 }

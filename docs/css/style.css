@@ -38,7 +38,6 @@ header a {
   border-bottom: 2px solid transparent;
   color: #3A4024;
   transition: border-color 0.3s;
-  font-size: 18px;
   text-decoration: none;
 }
 
@@ -54,12 +53,14 @@ header a:hover {
   border-color: #586A8C;
 }
 
+/* Main */
 main {
   max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
 }
 
+/* About me */
 .about-me {
   padding: 20px;
   margin-top: 68px;
@@ -68,6 +69,7 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Projects */
 .project-section, .example-projects, .about-me {
   margin-bottom: 40px;
 }
@@ -121,6 +123,7 @@ p {
   margin-bottom: 10px;
 }
 
+/* Projects Gallery */
 div.gallery {
   float: left;
   width: 180px;
@@ -142,6 +145,7 @@ div.desc {
   text-align: center;
 }
 
+/* Projects Pagination */
 .pagination {
   display: inline-block;
 }

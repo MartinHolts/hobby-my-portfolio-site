@@ -24,7 +24,6 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   letter-spacing: 4px;
 }
-
 header .header-container {
   display: flex;
   align-items: center;
@@ -33,24 +32,20 @@ header .header-container {
   height: 54px;
   margin: 0 auto;
 }
-
-header a {
+header .header-container a {
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   color: black;
   transition: border-color 0.3s;
   text-decoration: none;
 }
-
-header a:hover {
+header .header-container a:hover {
   border-color: black;
 }
-
-.headerRight > a:not(:first-of-type) {
+header .header-container .headerRight > a:not(:first-of-type) {
   margin-left: 20px;
 }
-
-.active {
+header .header-container .active {
   border-color: black;
 }
 

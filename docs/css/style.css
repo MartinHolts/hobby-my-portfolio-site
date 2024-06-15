@@ -36,13 +36,13 @@ header {
 header a {
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
-  color: #3A4024;
+  color: black;
   transition: border-color 0.3s;
   text-decoration: none;
 }
 
 header a:hover {
-  border-color: #586A8C;
+  border-color: black;
 }
 
 .headerRight > a:not(:first-of-type) {
@@ -50,7 +50,7 @@ header a:hover {
 }
 
 .active {
-  border-color: #586A8C;
+  border-color: black;
 }
 
 /* Main */

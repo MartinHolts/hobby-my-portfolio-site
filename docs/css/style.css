@@ -27,8 +27,9 @@ header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1160px;
+  max-width: 1240px;
   height: 54px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 header .header-container a {
@@ -50,14 +51,19 @@ header .header-container .active {
 
 /* Main */
 main {
-  max-width: 1200px;
+  max-width: 1240px;
   padding: 20px;
+  padding: 0 20px 20px 20px;
   margin: 0 auto;
 }
 
+section h3:first-of-type {
+  padding-top: 106px; /* adds heading height to normal padding */
+}
+
 section h3 {
+  padding-top: 58px;
   padding-bottom: 16px;
-  margin-top: 58px;
   margin-bottom: 42px;
   border-bottom: 1px solid #f1f1f1;
   font-family: "Segoe UI", Arial, sans-serif;

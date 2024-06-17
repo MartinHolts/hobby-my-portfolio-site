@@ -22,9 +22,9 @@ $button-hover: #40556e;
 
 /* Global styles */
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -48,8 +48,9 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		max-width: calc(1200px - 40px);
+		max-width: calc(1200px + 40px);
 		height: 54px;
+		padding: 0 20px;
 		margin: 0 auto;
 		
 		a {
@@ -76,14 +77,18 @@ header {
 
 /* Main */
 main {
-	max-width: 1200px;
+	max-width: 1240px;
 	padding: 20px;
+	padding: 0 20px 20px 20px;
 	margin: 0 auto;
+}
+section h3:first-of-type {
+	padding-top: calc(58px + 48px); /* adds heading height to normal padding */
 }
 
 section h3 {
+	padding-top: 58px;
 	padding-bottom: 16px;
-	margin-top: 58px;
 	margin-bottom: 42px;
 	border-bottom: 1px solid #f1f1f1;
     font-family: "Segoe UI", Arial, sans-serif;

@@ -82,18 +82,21 @@ main {
 	padding: 0 20px 20px 20px;
 	margin: 0 auto;
 }
-section h3:first-of-type {
-	padding-top: calc(58px + 48px); /* adds heading height to normal padding */
-}
 
 section h3 {
-	padding-top: 58px;
 	padding-bottom: 16px;
 	margin-bottom: 42px;
 	border-bottom: 1px solid #f1f1f1;
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
+
+	&:first-of-type {
+		padding-top: calc(58px + 48px); /* adds heading height to normal padding */
+	}
+	&:not(:first-of-type) {
+		padding-top: 58px;
+	}
 }
 
 /* About me */

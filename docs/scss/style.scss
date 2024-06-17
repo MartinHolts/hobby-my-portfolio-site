@@ -32,70 +32,70 @@ body {
 	color: $text-primary;
     font-family: Verdana, sans-serif;
     font-size: 15px;
-}
 
-header {
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	color: $text-black;
-	background-color: $background-white;
-	box-shadow: 0 2px 5px 0 $header-shadow-closer, 0 2px 10px 0 $header-shadow-further;
-    letter-spacing: 4px;
-
-	.header-container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: calc(1200px + 40px);
-		height: 54px;
-		padding: 0 20px;
-		margin: 0 auto;
-		
-		a {
-			padding-bottom: 2px;
-			border-bottom: 1px solid transparent;
-			color: $text-black;
-			transition: border-color 0.3s;
-			text-decoration: none;
-
-			&:hover {
+	header {
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+		color: $text-black;
+		background-color: $background-white;
+		box-shadow: 0 2px 5px 0 $header-shadow-closer, 0 2px 10px 0 $header-shadow-further;
+		letter-spacing: 4px;
+	
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: calc(1200px + 40px);
+			height: 54px;
+			padding: 0 20px;
+			margin: 0 auto;
+			
+			a {
+				padding-bottom: 2px;
+				border-bottom: 1px solid transparent;
+				color: $text-black;
+				transition: border-color 0.3s;
+				text-decoration: none;
+	
+				&:hover {
+					border-color: $border-black;
+				}
+			}
+			
+			.headerRight > a:not(:first-of-type) {
+				margin-left: 20px;
+			}
+	
+			.active {
 				border-color: $border-black;
 			}
 		}
-		
-		.headerRight > a:not(:first-of-type) {
-			margin-left: 20px;
-		}
+	}
+	
+	main {
+		max-width: 1240px;
+		padding: 20px;
+		padding: 0 20px 20px 20px;
+		margin: 0 auto;
 
-		.active {
-			border-color: $border-black;
+		section h3 {
+			padding-bottom: 16px;
+			margin-bottom: 42px;
+			border-bottom: 1px solid #f1f1f1;
+			font-family: "Segoe UI", Arial, sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+		}
+		
+		section:first-of-type h3 {
+			padding-top: calc(58px + 48px); /* adds heading height to normal padding */
+		}
+		
+		section:not(:first-of-type) h3 {
+			padding-top: 58px;
 		}
 	}
-}
-
-main {
-	max-width: 1240px;
-	padding: 20px;
-	padding: 0 20px 20px 20px;
-	margin: 0 auto;
-}
-
-section h3 {
-	padding-bottom: 16px;
-	margin-bottom: 42px;
-	border-bottom: 1px solid #f1f1f1;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-section:first-of-type h3 {
-	padding-top: calc(58px + 48px); /* adds heading height to normal padding */
-}
-
-section:not(:first-of-type) h3 {
-	padding-top: 58px;
 }
 
 #about {

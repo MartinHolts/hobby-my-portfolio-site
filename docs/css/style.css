@@ -12,8 +12,7 @@ body {
   font-family: Verdana, sans-serif;
   font-size: 15px;
 }
-
-header {
+body header {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -22,7 +21,7 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   letter-spacing: 4px;
 }
-header .header-container {
+body header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,31 +30,29 @@ header .header-container {
   padding: 0 20px;
   margin: 0 auto;
 }
-header .header-container a {
+body header .header-container a {
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   color: #000;
   transition: border-color 0.3s;
   text-decoration: none;
 }
-header .header-container a:hover {
+body header .header-container a:hover {
   border-color: #000;
 }
-header .header-container .headerRight > a:not(:first-of-type) {
+body header .header-container .headerRight > a:not(:first-of-type) {
   margin-left: 20px;
 }
-header .header-container .active {
+body header .header-container .active {
   border-color: #000;
 }
-
-main {
+body main {
   max-width: 1240px;
   padding: 20px;
   padding: 0 20px 20px 20px;
   margin: 0 auto;
 }
-
-section h3 {
+body main section h3 {
   padding-bottom: 16px;
   margin-bottom: 42px;
   border-bottom: 1px solid #f1f1f1;
@@ -63,12 +60,10 @@ section h3 {
   font-size: 24px;
   font-weight: 400;
 }
-
-section:first-of-type h3 {
+body main section:first-of-type h3 {
   padding-top: 106px; /* adds heading height to normal padding */
 }
-
-section:not(:first-of-type) h3 {
+body main section:not(:first-of-type) h3 {
   padding-top: 58px;
 }
 

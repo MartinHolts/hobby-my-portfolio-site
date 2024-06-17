@@ -90,13 +90,14 @@ section h3 {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
 
-	&:first-of-type {
-		padding-top: calc(58px + 48px); /* adds heading height to normal padding */
-	}
-	&:not(:first-of-type) {
-		padding-top: 58px;
-	}
+section:first-of-type h3 {
+	padding-top: calc(58px + 48px); /* adds heading height to normal padding */
+}
+
+section:not(:first-of-type) h3 {
+	padding-top: 58px;
 }
 
 /* About me */
@@ -146,11 +147,6 @@ ul li a {
 
 ul li a:hover {
 	color: $text-link;
-}
-
-h1, h2, h3, h4 {
-	color: $text-link;
-	font-weight: 500;
 }
 
 p {

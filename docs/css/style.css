@@ -181,23 +181,23 @@ div.desc {
 }
 
 /* Contact Form */
-.contact-section {
+#contact {
   max-width: 600px;
   padding: 20px;
   margin: 0 auto;
   text-align: center;
 }
 
-.contact-section h3 {
+#contact h3 {
   margin-bottom: 10px;
 }
 
-.contact-section p {
+#contact p {
   margin-bottom: 20px;
 }
 
-.contact-section form input,
-.contact-section form textarea {
+#contact form input,
+#contact form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -206,13 +206,13 @@ div.desc {
   transition: border-color 0.3s;
 }
 
-.contact-section form input:focus,
-.contact-section form textarea:focus {
+#contact form input:focus,
+#contact form textarea:focus {
   border-color: #586A8C;
   outline: none;
 }
 
-.contact-section form button {
+#contact form button {
   display: inline-block;
   padding: 10px 20px;
   border: none;
@@ -223,7 +223,7 @@ div.desc {
   transition: background-color 0.3s;
 }
 
-.contact-section form button:hover {
+#contact form button:hover {
   background-color: #40556e;
 }
 

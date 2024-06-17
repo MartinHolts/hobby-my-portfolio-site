@@ -13,7 +13,6 @@ body {
   font-size: 15px;
 }
 
-/* Header */
 header {
   position: fixed;
   z-index: 1;
@@ -49,7 +48,6 @@ header .header-container .active {
   border-color: #000;
 }
 
-/* Main */
 main {
   max-width: 1240px;
   padding: 20px;
@@ -74,8 +72,6 @@ section:not(:first-of-type) h3 {
   padding-top: 58px;
 }
 
-/* About me */
-/* Projects */
 .project-box {
   display: flex;
   align-items: flex-start;

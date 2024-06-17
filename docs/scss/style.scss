@@ -30,7 +30,6 @@ $button-hover: #40556e;
 body {
     line-height: 1.5;
 	color: $text-primary;
-	background-color: $background-white;
     font-family: Verdana, sans-serif;
     font-size: 15px;
 }
@@ -80,6 +79,16 @@ main {
 	max-width: 1200px;
 	padding: 20px;
 	margin: 0 auto;
+}
+
+section h3 {
+	padding-bottom: 16px;
+	margin-top: 58px;
+	margin-bottom: 42px;
+	border-bottom: 1px solid #f1f1f1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 /* About me */

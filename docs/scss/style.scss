@@ -93,16 +93,12 @@ section h3 {
 
 /* About me */
 .about-me {
-	padding: 20px;
-	margin-top: 68px;
-	border-radius: 8px;
-	background-color: $background-white;
-	box-shadow: 0 2px 4px $shadow;
+	
 }
 
 /* Projects */
-.project-section, .example-projects, .about-me {
-	margin-bottom: 40px;
+.example-projects {
+	
 }
 
 .project-box {

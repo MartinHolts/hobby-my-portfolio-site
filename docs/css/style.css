@@ -52,6 +52,12 @@ body main {
   padding: 0 20px 20px 20px;
   margin: 0 auto;
 }
+body main section:first-of-type h3 {
+  padding-top: 106px; /* adds heading height to normal padding */
+}
+body main section:not(:first-of-type) h3 {
+  padding-top: 58px;
+}
 body main section h3 {
   padding-bottom: 16px;
   margin-bottom: 42px;
@@ -59,12 +65,6 @@ body main section h3 {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
-}
-body main section:first-of-type h3 {
-  padding-top: 106px; /* adds heading height to normal padding */
-}
-body main section:not(:first-of-type) h3 {
-  padding-top: 58px;
 }
 
 .project-box {

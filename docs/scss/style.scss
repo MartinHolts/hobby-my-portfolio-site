@@ -79,21 +79,21 @@ body {
 		padding: 0 20px 20px 20px;
 		margin: 0 auto;
 
-		section h3 {
-			padding-bottom: 16px;
-			margin-bottom: 42px;
-			border-bottom: 1px solid #f1f1f1;
-			font-family: "Segoe UI", Arial, sans-serif;
-			font-size: 24px;
-			font-weight: 400;
-		}
-		
-		section:first-of-type h3 {
-			padding-top: calc(58px + 48px); /* adds heading height to normal padding */
-		}
-		
-		section:not(:first-of-type) h3 {
-			padding-top: 58px;
+		section {
+			&:first-of-type h3 {
+				padding-top: calc(58px + 48px); /* adds heading height to normal padding */
+			}
+			&:not(:first-of-type) h3 {
+				padding-top: 58px;
+			}
+			h3 {
+				padding-bottom: 16px;
+				margin-bottom: 42px;
+				border-bottom: 1px solid #f1f1f1;
+				font-family: "Segoe UI", Arial, sans-serif;
+				font-size: 24px;
+				font-weight: 400;
+			}
 		}
 	}
 }

@@ -27,6 +27,10 @@ $button-hover: #40556e;
   margin: 0;
 }
 
+button, input, select, textarea {
+    font: inherit;
+}
+
 body {
     line-height: 1.5;
 	color: $text-primary;
@@ -55,7 +59,6 @@ body {
 				padding-bottom: 2px;
 				border-bottom: 1px solid transparent;
 				color: $text-black;
-				transition: border-color 0.3s;
 				text-decoration: none;
 	
 				&:hover {
@@ -136,7 +139,6 @@ ul li {
 
 ul li a {
 	color: $border-link-hover;
-	transition: color 0.3s;
 	font-size: 16px;
 	text-decoration: none;
 }
@@ -177,7 +179,6 @@ div.desc {
 	float: left;
 	padding: 8px 16px;
 	color: black;
-	transition: background-color 0.2s ease;
 	text-decoration: none;
 }
 
@@ -220,15 +221,8 @@ div.desc {
 #contact form textarea {
 	width: 100%;
 	padding: 8px;
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 	border: 1px solid $form-border;
-	transition: border-color 0.3s;
-}
-
-#contact form input:focus,
-#contact form textarea:focus {
-	border-color: $form-border-focus;
-	outline: none;
 }
 
 #contact form button {
@@ -239,7 +233,6 @@ div.desc {
 	color: #fff;
 	background-color: $button-background;
 	cursor: pointer;
-	transition: background-color 0.3s;
 }
 
 #contact form button:hover {

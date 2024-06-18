@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+button, input, select, textarea {
+  font: inherit;
+}
+
 body {
   line-height: 1.5;
   color: #333;
@@ -34,7 +38,6 @@ body header .header-container a {
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   color: #000;
-  transition: border-color 0.3s;
   text-decoration: none;
 }
 body header .header-container a:hover {
@@ -97,7 +100,6 @@ ul li {
 
 ul li a {
   color: #586A8C;
-  transition: color 0.3s;
   font-size: 16px;
   text-decoration: none;
 }
@@ -138,7 +140,6 @@ div.desc {
   float: left;
   padding: 8px 16px;
   color: black;
-  transition: background-color 0.2s ease;
   text-decoration: none;
 }
 
@@ -173,15 +174,8 @@ div.desc {
 #contact form textarea {
   width: 100%;
   padding: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
-  transition: border-color 0.3s;
-}
-
-#contact form input:focus,
-#contact form textarea:focus {
-  border-color: #586A8C;
-  outline: none;
 }
 
 #contact form button {
@@ -192,7 +186,6 @@ div.desc {
   color: #fff;
   background-color: #586A8C;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 #contact form button:hover {

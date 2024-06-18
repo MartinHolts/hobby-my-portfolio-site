@@ -171,7 +171,8 @@ div.desc {
 
 /* Projects Pagination */
 .pagination {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 }
 

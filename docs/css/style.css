@@ -170,15 +170,12 @@ div.desc {
 #contact p {
   margin-bottom: 15px;
 }
-
-#contact form input,
-#contact form textarea {
+#contact form input, #contact form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
 }
-
 #contact form button {
   display: inline-block;
   padding: 10px 20px;
@@ -188,7 +185,6 @@ div.desc {
   background-color: #586A8C;
   cursor: pointer;
 }
-
 #contact form button:hover {
   background-color: #40556e;
 }

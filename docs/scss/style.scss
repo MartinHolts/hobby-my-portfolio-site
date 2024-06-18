@@ -207,35 +207,27 @@ div.desc {
 
 /* Contact Form */
 #contact {
-	
-}
-
-#contact h3 {
-	
-}
-
-#contact p {
-	margin-bottom: 15px;
-}
-
-#contact form input,
-#contact form textarea {
-	width: 100%;
-	padding: 8px;
-	margin-bottom: 16px;
-	border: 1px solid $form-border;
-}
-
-#contact form button {
-	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	color: #fff;
-	background-color: $button-background;
-	cursor: pointer;
-}
-
-#contact form button:hover {
-	background-color: $button-hover;
+	p {
+		margin-bottom: 15px;
+	}
+	form {
+		input, textarea {
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 16px;
+			border: 1px solid $form-border;
+		}
+		button {
+			display: inline-block;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			background-color: $button-background;
+			cursor: pointer;
+			&:hover {
+				background-color: $button-hover;
+			}
+		}
+	}
 }

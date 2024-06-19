@@ -38,18 +38,21 @@ body header nav {
   padding: 0 20px;
   margin: 0 auto;
 }
-body header nav a {
-  padding-bottom: 2px;
+body header nav .header-left, body header nav .header-right {
+  display: flex;
+}
+body header nav .header-left a, body header nav .header-right a {
+  height: 22.5px;
   border-bottom: 1px solid transparent;
   color: #000;
   user-select: none;
   text-decoration: none;
 }
-body header nav a:hover {
-  border-color: #000;
+body header nav .header-left a:not(:first-of-type), body header nav .header-right a:not(:first-of-type) {
+  margin-left: 46px;
 }
-body header nav .headerRight > a:not(:first-of-type) {
-  margin-left: 20px;
+body header nav .header-left a:hover, body header nav .header-right a:hover {
+  border-color: #000;
 }
 body header nav .active {
   border-color: #000;

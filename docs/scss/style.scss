@@ -60,20 +60,24 @@ body {
 			height: 54px;
 			padding: 0 20px;
 			margin: 0 auto;
+
+			.header-left, .header-right {
+				display: flex;
 			
-			a {
-				padding-bottom: 2px;
-				border-bottom: 1px solid transparent;
-				color: $text-black;
-				user-select: none;
-				text-decoration: none;
-	
-				&:hover {
-					border-color: $border-black;
+				a {
+					height: 22.5px;
+					border-bottom: 1px solid transparent;
+					color: $text-black;
+					user-select: none;
+					text-decoration: none;
+					
+					&:not(:first-of-type) {
+						margin-left: 46px;
+					}
+					&:hover {
+						border-color: $border-black;
+					}
 				}
-			}
-			.headerRight > a:not(:first-of-type) {
-				margin-left: 20px;
 			}
 			.active {
 				border-color: $border-black;

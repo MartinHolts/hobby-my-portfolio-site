@@ -195,7 +195,8 @@ div.desc {
   cursor: pointer;
 }
 #contact form button:hover {
-  background-color: #40556e;
+  color: #000;
+  background-color: #ccc;
 }
 
 /*# sourceMappingURL=style.css.map */

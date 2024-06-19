@@ -4,7 +4,11 @@ $background-white: #fff;
 
 $text-black: #000;
 $border-black: #000;
-$button-background-black: #000;
+
+$form-border: #ccc;
+$button-background: #000;
+$button-hover-color: #000;
+$button-hover-background: #ccc;
 
 $header-shadow-closer: rgba(0, 0, 0, 0.16);
 $header-shadow-further: rgba(0, 0, 0, 0.12);
@@ -16,10 +20,7 @@ $shadow: rgba(0, 0, 0, 0.1);
 $border-gallery-hover: #777;
 $pagination-active: #4CAF50;
 $background-hover: #ddd;
-$form-border: #ccc;
 $form-border-focus: #586A8C;
-$button-background: #586A8C;
-$button-hover: #40556e;
 
 /* Global styles */
 * {
@@ -233,10 +234,11 @@ div.desc {
 			padding: 8px 16px;
 			border: none;
 			color: #fff;
-			background-color: $button-background-black;
+			background-color: $button-background;
 			cursor: pointer;
 			&:hover {
-				background-color: $button-hover;
+				color: $button-hover-color;
+				background-color: $button-hover-background;
 			}
 		}
 	}

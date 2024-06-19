@@ -149,6 +149,7 @@ div.desc {
   float: left;
   padding: 8px 16px;
   color: black;
+  user-select: none;
   text-decoration: none;
 }
 

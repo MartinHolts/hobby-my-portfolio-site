@@ -4,6 +4,7 @@ $background-white: #fff;
 
 $text-black: #000;
 $border-black: #000;
+$button-background-black: #000;
 
 $header-shadow-closer: rgba(0, 0, 0, 0.16);
 $header-shadow-further: rgba(0, 0, 0, 0.12);
@@ -25,6 +26,10 @@ $button-hover: #40556e;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+button {
+	user-select: none;
 }
 
 button, input, select, textarea {
@@ -59,6 +64,7 @@ body {
 				padding-bottom: 2px;
 				border-bottom: 1px solid transparent;
 				color: $text-black;
+				user-select: none;
 				text-decoration: none;
 	
 				&:hover {
@@ -213,16 +219,21 @@ div.desc {
 		input, textarea {
 			width: 100%;
 			padding: 8px;
-			margin-bottom: 16px;
 			border: 1px solid $form-border;
+		}
+		input {
+			margin-bottom: 16px;
+		}
+		textarea {
+			display: block;
+			margin-bottom: 32px;
 		}
 		button {
 			display: inline-block;
-			padding: 10px 20px;
+			padding: 8px 16px;
 			border: none;
-			border-radius: 5px;
 			color: #fff;
-			background-color: $button-background;
+			background-color: $button-background-black;
 			cursor: pointer;
 			&:hover {
 				background-color: $button-hover;

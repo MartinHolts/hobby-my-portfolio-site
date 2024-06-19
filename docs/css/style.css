@@ -54,7 +54,7 @@ body header nav .header-left a:not(:first-of-type), body header nav .header-righ
 body header nav .header-left a:hover, body header nav .header-right a:hover {
   border-color: #000;
 }
-body header nav .active {
+body header nav .header-left .active, body header nav .header-right .active {
   border-color: #000;
 }
 body main {

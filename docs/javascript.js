@@ -1,57 +1,63 @@
+let currentPage = 1;
+const totalPages = 6;
 
-function openImg(imgName) {
-	var i, x;
-	x = document.getElementsByClassName("picture");
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	}
-	document.getElementById(imgName).style.display = "block";
-}
+document.addEventListener('DOMContentLoaded', init);
 
+function init() {
+	document.getElementById("prevBtn").addEventListener("click", function (event) {
+		event.preventDefault();
+		prevPage();
+		addClickAnimation("prevBtn");
+	});
 
-var currentPage = 1;
-var totalPages = 6;
+	document.getElementById("nextBtn").addEventListener("click", function (event) {
+		event.preventDefault();
+		nextPage();
+		addClickAnimation("nextBtn");
+	});
 
-function showPage(pageId) {
-	// Hide all content
-	var contents = document.getElementsByClassName('content');
-	for (var i = 0; i < contents.length; i++) {
-		contents[i].classList.remove('active');
-	}
+	document.querySelectorAll('.pagination a[data-page]').forEach(function (pageLink) {
+		pageLink.addEventListener("click", function (event) {
+			event.preventDefault();
+			showPage(parseInt(this.getAttribute('data-page').replace('page', '')));
+			addClickAnimation(this.id);
+		});
+	});
 
-	// Remove active class from all pagination links
-	var links = document.querySelectorAll('.pagination a');
-	for (var i = 0; i < links.length; i++) {
-		links[i].classList.remove('active');
-	}
-
-	// Show the selected page
-	document.getElementById(pageId).classList.add('active');
-
-	// Add active class to the clicked link
-	var activeLink = document.querySelector('.pagination a[onclick="showPage(\'' + pageId + '\')"]');
-	if (activeLink) {
-		activeLink.classList.add('active');
-	}
-
-	// Update current page number
-	currentPage = parseInt(pageId.replace('page', ''));
+	// Initialize the first page view
+	showPage(currentPage);
 }
 
 function prevPage() {
 	if (currentPage > 1) {
 		currentPage--;
-		showPage('page' + currentPage);
-		addClickAnimation('prevBtn');
+		showPage(currentPage);
 	}
 }
 
 function nextPage() {
 	if (currentPage < totalPages) {
 		currentPage++;
-		showPage('page' + currentPage);
-		addClickAnimation('nextBtn');
+		showPage(currentPage);
 	}
+}
+
+function showPage(page) {
+	currentPage = page;
+	console.log('Showing page:', currentPage);
+
+	document.querySelectorAll('.content').forEach(function (content) {
+		content.classList.remove('active');
+	});
+
+	document.getElementById(`page${currentPage}`).classList.add('active');
+
+	// Update the pagination active link
+	document.querySelectorAll('.pagination a').forEach(function (link) {
+		link.classList.remove('active');
+	});
+
+	document.querySelector(`.pagination a[data-page="page${currentPage}"]`).classList.add('active');
 }
 
 function addClickAnimation(buttonId) {
@@ -61,6 +67,3 @@ function addClickAnimation(buttonId) {
 		button.classList.remove('clicked');
 	}, 200);
 }
-
-// Initial call to showPage to set the active page
-showPage('page1');

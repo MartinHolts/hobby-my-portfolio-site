@@ -155,7 +155,7 @@ ul li a:hover {
 /* Projects Gallery */
 div.gallery {
 	float: left;
-	width: 180px;
+	width: 32%;
 	margin: 5px;
 	border: 1px solid $form-border;
 }
@@ -203,7 +203,8 @@ div.desc {
 }
 
 .content.active {
-	display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pagination a.clicked {

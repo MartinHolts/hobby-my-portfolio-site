@@ -202,6 +202,10 @@ div.desc {
 			color: white;
 			background-color: $pagination-active;
 		}
+		&.clicked {
+			color: white;
+			background-color: $pagination-active;
+		}
 	}
 }
 
@@ -212,11 +216,6 @@ div.desc {
 .content.active {
     display: flex;
     flex-wrap: wrap;
-}
-
-.pagination a.clicked {
-	color: white;
-	background-color: $pagination-active;
 }
 
 #contact {

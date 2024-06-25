@@ -133,6 +133,16 @@ div.gallery img {
   height: auto;
 }
 
+.gallery a.gallery-button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 5px;
+  color: #000;
+  background-color: #f1f1f1;
+  text-decoration: none;
+}
+
 div.desc {
   padding: 15px;
   text-align: center;

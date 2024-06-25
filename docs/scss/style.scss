@@ -84,7 +84,6 @@ body {
 			}
 		}
 	}
-	
 	main {
 		max-width: 1240px;
 		padding: 0 20px 20px 20px;
@@ -97,6 +96,100 @@ body {
 			&:not(:first-of-type) h3 {
 				padding-top: 58px;
 			}
+			&#projects {
+				.content {
+					display: none;
+				
+					&.active {
+						display: flex;
+						flex-wrap: wrap;
+					}
+					.gallery {
+						float: left;
+						width: 32%;
+						margin: 5px;
+						border: 1px solid $form-border;
+				
+						&:hover {
+							border: 1px solid $border-gallery-hover;
+						}
+						.description {
+							padding: 15px;
+							text-align: center;
+						}
+						img {
+							width: 100%;
+							height: auto;
+						}
+						a.gallery-button {
+							display: inline-block;
+							box-sizing: border-box;
+							padding: 8px 16px;
+							margin: 5px;
+							color: #000;
+							background-color: #f1f1f1;
+							text-decoration: none;
+						}
+					}
+				}
+				.pagination {
+					display: flex;
+					justify-content: center;
+					width: 100%;
+				
+					a {
+						float: left;
+						padding: 8px 16px;
+						color: black;
+						user-select: none;
+						text-decoration: none;
+				
+						&:hover:not(.active) {
+							background-color: $background-hover;
+						}
+						&.active {
+							color: white;
+							background-color: $pagination-active;
+						}
+						&.clicked {
+							color: white;
+							background-color: $pagination-active;
+						}
+					}
+				}
+			}
+			&#contact {
+				p {
+					margin-bottom: 15px;
+				}
+				form {
+					input, textarea {
+						width: 100%;
+						padding: 8px;
+						border: 1px solid $form-border;
+					}
+					input {
+						margin-bottom: 16px;
+					}
+					textarea {
+						display: block;
+						margin-bottom: 32px;
+					}
+					button {
+						display: inline-block;
+						padding: 8px 16px;
+						border: none;
+						color: #fff;
+						background-color: $button-background;
+						cursor: pointer;
+						
+						&:hover {
+							color: $button-hover-color;
+							background-color: $button-hover-background;
+						}
+					}
+				}
+			}
 			h3 {
 				padding-bottom: 16px;
 				margin-bottom: 31px;
@@ -104,148 +197,6 @@ body {
 				font-family: "Segoe UI", Arial, sans-serif;
 				font-size: 24px;
 				font-weight: 400;
-			}
-		}
-	}
-}
-
-#projects {
-	
-}
-
-.project-box {
-	display: flex;
-	align-items: flex-start;
-	padding: 20px;
-	border-radius: 8px;
-	background-color: $background-white;
-	box-shadow: 0 2px 4px $shadow;
-}
-
-.project-box img {
-	max-width: 200px;
-	margin-right: 20px;
-	border-radius: 8px;
-}
-
-.text-box h4 {
-	margin-top: 20px;
-	color: $border-link-hover;
-}
-
-ul {
-	padding-left: 20px;
-}
-
-ul li {
-	margin-bottom: 10px;
-}
-
-ul li a {
-	color: $border-link-hover;
-	font-size: 16px;
-	text-decoration: none;
-}
-
-ul li a:hover {
-	color: $text-link;
-}
-
-/* Projects Gallery */
-div.gallery {
-	float: left;
-	width: 32%;
-	margin: 5px;
-	border: 1px solid $form-border;
-}
-
-div.gallery:hover {
-	border: 1px solid $border-gallery-hover;
-}
-
-div.gallery img {
-	width: 100%;
-	height: auto;
-}
-.gallery a.gallery-button {
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 8px 16px;
-    margin: 5px;
-    color: #000;
-    background-color: #f1f1f1;
-    text-decoration: none;
-}
-
-div.desc {
-	padding: 15px;
-	text-align: center;
-}
-
-/* Projects Pagination */
-.pagination {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-
-	a {
-		float: left;
-		padding: 8px 16px;
-		color: black;
-		user-select: none;
-		text-decoration: none;
-
-		&:hover:not(.active) {
-			background-color: $background-hover;
-		}
-		&.active {
-			color: white;
-			background-color: $pagination-active;
-		}
-		&.clicked {
-			color: white;
-			background-color: $pagination-active;
-		}
-	}
-}
-
-.content {
-	display: none;
-}
-
-.content.active {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#contact {
-	p {
-		margin-bottom: 15px;
-	}
-	form {
-		input, textarea {
-			width: 100%;
-			padding: 8px;
-			border: 1px solid $form-border;
-		}
-		input {
-			margin-bottom: 16px;
-		}
-		textarea {
-			display: block;
-			margin-bottom: 32px;
-		}
-		button {
-			display: inline-block;
-			padding: 8px 16px;
-			border: none;
-			color: #fff;
-			background-color: $button-background;
-			cursor: pointer;
-			
-			&:hover {
-				color: $button-hover-color;
-				background-color: $button-hover-background;
 			}
 		}
 	}

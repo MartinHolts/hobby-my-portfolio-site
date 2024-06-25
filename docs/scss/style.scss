@@ -77,9 +77,9 @@ body {
 					&:hover {
 						border-color: $border-black;
 					}
-				}
-				.active {
-					border-color: $border-black;
+					&.active {
+						border-color: $border-black;
+					}
 				}
 			}
 		}
@@ -187,23 +187,22 @@ div.desc {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-}
 
-.pagination a {
-	float: left;
-	padding: 8px 16px;
-	color: black;
-	user-select: none;
-	text-decoration: none;
-}
+	a {
+		float: left;
+		padding: 8px 16px;
+		color: black;
+		user-select: none;
+		text-decoration: none;
 
-.pagination a.active {
-	color: white;
-	background-color: $pagination-active;
-}
-
-.pagination a:hover:not(.active) {
-	background-color: $background-hover;
+		&:hover:not(.active) {
+			background-color: $background-hover;
+		}
+		&.active {
+			color: white;
+			background-color: $pagination-active;
+		}
+	}
 }
 
 .content {
@@ -244,6 +243,7 @@ div.desc {
 			color: #fff;
 			background-color: $button-background;
 			cursor: pointer;
+			
 			&:hover {
 				color: $button-hover-color;
 				background-color: $button-hover-background;

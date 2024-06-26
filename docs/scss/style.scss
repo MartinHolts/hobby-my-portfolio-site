@@ -108,6 +108,7 @@ body {
 					&.active {
 						display: flex;
 						flex-wrap: wrap;
+						margin-bottom: 16px;
 						gap: 16px;
 						
 						.gallery {

@@ -79,6 +79,7 @@ body main section#projects .content {
 body main section#projects .content.active {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 16px;
   gap: 16px;
 }
 body main section#projects .content.active .gallery {

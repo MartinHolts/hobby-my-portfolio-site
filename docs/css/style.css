@@ -99,9 +99,12 @@ body main section#projects .content .gallery h2 {
   font-size: 24px;
   font-weight: 400;
 }
-body main section#projects .content .gallery p {
+body main section#projects .content .gallery p.tags {
   margin: 15px 0;
   opacity: 0.6;
+}
+body main section#projects .content .gallery p.description {
+  margin: 15px 0;
 }
 body main section#projects .content .gallery a.gallery-button {
   display: block;

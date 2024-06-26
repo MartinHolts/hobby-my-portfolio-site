@@ -130,9 +130,12 @@ body {
 							font-size: 24px;
 							font-weight: 400;
 						}
-						p {
+						p.tags {
 							margin: 15px 0;
 							opacity: 0.60;
+						}
+						p.description {
+							margin: 15px 0;
 						}
 						a.gallery-button {
 							display: block;

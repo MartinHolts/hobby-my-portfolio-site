@@ -87,6 +87,11 @@ body main section#projects .content .gallery {
 body main section#projects .content .gallery:not(:nth-of-type(3)) {
   padding-right: 16px;
 }
+body main section#projects .content .gallery a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 body main section#projects .content .gallery h2 {
   margin: 10px 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -94,12 +99,8 @@ body main section#projects .content .gallery h2 {
   font-weight: 400;
 }
 body main section#projects .content .gallery p {
+  margin: 15px 0;
   opacity: 0.6;
-}
-body main section#projects .content .gallery img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 body main section#projects .content .gallery a.gallery-button {
   display: inline-block;

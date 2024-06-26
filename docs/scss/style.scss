@@ -112,7 +112,7 @@ body {
 					}
 					.gallery {
 						float: left;
-						flex: 1 1 calc(33.333% - 16px);
+						flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
 						gap: 16px;
 						a {
 							img {

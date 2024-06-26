@@ -87,11 +87,14 @@ body main section#projects .content .gallery {
 body main section#projects .content .gallery:not(:nth-of-type(3)) {
   padding-right: 16px;
 }
-body main section#projects .content .gallery h2.description {
+body main section#projects .content .gallery h2 {
   margin: 10px 0;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
+}
+body main section#projects .content .gallery p {
+  opacity: 0.6;
 }
 body main section#projects .content .gallery img {
   display: block;

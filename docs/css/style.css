@@ -79,14 +79,12 @@ body main section#projects .content {
 body main section#projects .content.active {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 }
 body main section#projects .content .gallery {
   float: left;
-  width: 33.33%;
-  padding-bottom: 16px;
-}
-body main section#projects .content .gallery:not(:nth-of-type(3)) {
-  padding-right: 16px;
+  flex: 1 1 calc(33.333% - 16px);
+  gap: 16px;
 }
 body main section#projects .content .gallery a img {
   display: block;

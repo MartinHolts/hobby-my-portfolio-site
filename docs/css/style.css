@@ -81,30 +81,29 @@ body main section#projects .content.active {
   flex-wrap: wrap;
   gap: 16px;
 }
-body main section#projects .content .gallery {
+body main section#projects .content.active .gallery {
   float: left;
   flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
-  gap: 16px;
 }
-body main section#projects .content .gallery a img {
+body main section#projects .content.active .gallery a img {
   display: block;
   width: 100%;
   height: auto;
 }
-body main section#projects .content .gallery h2 {
+body main section#projects .content.active .gallery h2 {
   margin: 10px 0;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
 }
-body main section#projects .content .gallery p.tags {
+body main section#projects .content.active .gallery p.tags {
   margin: 15px 0;
   opacity: 0.6;
 }
-body main section#projects .content .gallery p.description {
+body main section#projects .content.active .gallery p.description {
   margin: 15px 0;
 }
-body main section#projects .content .gallery a.gallery-button {
+body main section#projects .content.active .gallery a.gallery-button {
   display: block;
   float: left;
   width: fit-content;
@@ -115,7 +114,7 @@ body main section#projects .content .gallery a.gallery-button {
   background-color: #f1f1f1;
   text-decoration: none;
 }
-body main section#projects .content .gallery a.gallery-button:hover {
+body main section#projects .content.active .gallery a.gallery-button:hover {
   background-color: #ccc;
 }
 body main section#projects .pagination {

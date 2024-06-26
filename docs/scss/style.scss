@@ -109,44 +109,44 @@ body {
 						display: flex;
 						flex-wrap: wrap;
 						gap: 16px;
-					}
-					.gallery {
-						float: left;
-						flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
-						gap: 16px;
-						a {
-							img {
-								display: block;
-								width: 100%;
-								height: auto;
-							}
-						}
-						h2 {
-							margin: 10px 0;
-							font-family: "Segoe UI", Arial, sans-serif;
-							font-size: 24px;
-							font-weight: 400;
-						}
-						p.tags {
-							margin: 15px 0;
-							opacity: 0.60;
-						}
-						p.description {
-							margin: 15px 0;
-						}
-						a.gallery-button {
-							display: block;
+						
+						.gallery {
 							float: left;
-							width: fit-content;
-							box-sizing: border-box;
-							padding: 8px 16px;
-							margin-right: 10px;
-							color: #000;
-							background-color: #f1f1f1;
-							text-decoration: none;
+							flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
+							a {
+								img {
+									display: block;
+									width: 100%;
+									height: auto;
+								}
+							}
+							h2 {
+								margin: 10px 0;
+								font-family: "Segoe UI", Arial, sans-serif;
+								font-size: 24px;
+								font-weight: 400;
+							}
+							p.tags {
+								margin: 15px 0;
+								opacity: 0.60;
+							}
+							p.description {
+								margin: 15px 0;
+							}
+							a.gallery-button {
+								display: block;
+								float: left;
+								width: fit-content;
+								box-sizing: border-box;
+								padding: 8px 16px;
+								margin-right: 10px;
+								color: #000;
+								background-color: #f1f1f1;
+								text-decoration: none;
 
-							&:hover {
-								background-color: #ccc;
+								&:hover {
+									background-color: #ccc;
+								}
 							}
 						}
 					}

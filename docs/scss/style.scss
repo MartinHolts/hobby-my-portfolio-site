@@ -144,6 +144,10 @@ body {
 							color: #000;
 							background-color: #f1f1f1;
 							text-decoration: none;
+
+							&:hover {
+								background-color: #ccc;
+							}
 						}
 					}
 				}

@@ -114,6 +114,9 @@ body main section#projects .content .gallery a.gallery-button {
   background-color: #f1f1f1;
   text-decoration: none;
 }
+body main section#projects .content .gallery a.gallery-button:hover {
+  background-color: #ccc;
+}
 body main section#projects .pagination {
   display: flex;
   justify-content: center;

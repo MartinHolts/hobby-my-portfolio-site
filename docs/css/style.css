@@ -14,6 +14,11 @@ button, input, select, textarea {
   font: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+}
+
 body {
   line-height: 1.5;
   color: #333;
@@ -77,18 +82,19 @@ body main section#projects .content.active {
 }
 body main section#projects .content .gallery {
   float: left;
-  width: 32%;
-  margin: 5px;
-  border: 1px solid #ccc;
+  width: 33.33%;
 }
-body main section#projects .content .gallery:hover {
-  border: 1px solid #777;
+body main section#projects .content .gallery:not(:nth-of-type(3)) {
+  padding-right: 16px;
 }
-body main section#projects .content .gallery .description {
-  padding: 15px;
-  text-align: center;
+body main section#projects .content .gallery h2.description {
+  margin: 10px 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 body main section#projects .content .gallery img {
+  display: block;
   width: 100%;
   height: auto;
 }

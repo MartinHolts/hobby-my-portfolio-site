@@ -37,6 +37,11 @@ button, input, select, textarea {
     font: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+}
+
 body {
     line-height: 1.5;
 	color: $text-primary;
@@ -106,18 +111,19 @@ body {
 					}
 					.gallery {
 						float: left;
-						width: 32%;
-						margin: 5px;
-						border: 1px solid $form-border;
-				
-						&:hover {
-							border: 1px solid $border-gallery-hover;
+						width: 33.33%;
+						
+						&:not(:nth-of-type(3)) {
+							padding-right: 16px;
 						}
-						.description {
-							padding: 15px;
-							text-align: center;
+						h2.description {
+							margin: 10px 0;						
+							font-family: "Segoe UI", Arial, sans-serif;
+							font-size: 24px;
+							font-weight: 400;
 						}
 						img {
+							display: block;
 							width: 100%;
 							height: auto;
 						}

@@ -54,12 +54,11 @@ body header nav .header-left a:not(:first-of-type), body header nav .header-righ
 body header nav .header-left a:hover, body header nav .header-right a:hover {
   border-color: #000;
 }
-body header nav .header-left .active, body header nav .header-right .active {
+body header nav .header-left a.active, body header nav .header-right a.active {
   border-color: #000;
 }
 body main {
   max-width: 1240px;
-  padding: 20px;
   padding: 0 20px 20px 20px;
   margin: 0 auto;
 }
@@ -69,71 +68,31 @@ body main section:first-of-type h3 {
 body main section:not(:first-of-type) h3 {
   padding-top: 58px;
 }
-body main section h3 {
-  padding-bottom: 16px;
-  margin-bottom: 31px;
-  border-bottom: 1px solid #f1f1f1;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+body main section#projects .content {
+  display: none;
 }
-
-.project-box {
+body main section#projects .content.active {
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
-
-.project-box img {
-  max-width: 200px;
-  margin-right: 20px;
-  border-radius: 8px;
-}
-
-.text-box h4 {
-  margin-top: 20px;
-  color: #586A8C;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-ul li a {
-  color: #586A8C;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  color: #3A4024;
-}
-
-/* Projects Gallery */
-div.gallery {
+body main section#projects .content .gallery {
   float: left;
   width: 32%;
   margin: 5px;
   border: 1px solid #ccc;
 }
-
-div.gallery:hover {
+body main section#projects .content .gallery:hover {
   border: 1px solid #777;
 }
-
-div.gallery img {
+body main section#projects .content .gallery .description {
+  padding: 15px;
+  text-align: center;
+}
+body main section#projects .content .gallery img {
   width: 100%;
   height: auto;
 }
-
-.gallery a.gallery-button {
+body main section#projects .content .gallery a.gallery-button {
   display: inline-block;
   box-sizing: border-box;
   padding: 8px 16px;
@@ -142,66 +101,45 @@ div.gallery img {
   background-color: #f1f1f1;
   text-decoration: none;
 }
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-/* Projects Pagination */
-.pagination {
+body main section#projects .pagination {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
-.pagination a {
+body main section#projects .pagination a {
   float: left;
   padding: 8px 16px;
   color: black;
   user-select: none;
   text-decoration: none;
 }
-
-.pagination a.active {
-  color: white;
-  background-color: #4CAF50;
-}
-
-.pagination a:hover:not(.active) {
+body main section#projects .pagination a:hover:not(.active) {
   background-color: #ddd;
 }
-
-.content {
-  display: none;
-}
-
-.content.active {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pagination a.clicked {
+body main section#projects .pagination a.active {
   color: white;
   background-color: #4CAF50;
 }
-
-#contact p {
+body main section#projects .pagination a.clicked {
+  color: white;
+  background-color: #4CAF50;
+}
+body main section#contact p {
   margin-bottom: 15px;
 }
-#contact form input, #contact form textarea {
+body main section#contact form input, body main section#contact form textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
 }
-#contact form input {
+body main section#contact form input {
   margin-bottom: 16px;
 }
-#contact form textarea {
+body main section#contact form textarea {
   display: block;
   margin-bottom: 32px;
 }
-#contact form button {
+body main section#contact form button {
   display: inline-block;
   padding: 8px 16px;
   border: none;
@@ -209,9 +147,17 @@ div.desc {
   background-color: #000;
   cursor: pointer;
 }
-#contact form button:hover {
+body main section#contact form button:hover {
   color: #000;
   background-color: #ccc;
+}
+body main section h3 {
+  padding-bottom: 16px;
+  margin-bottom: 31px;
+  border-bottom: 1px solid #f1f1f1;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -112,6 +112,7 @@ body main section#projects .content.active .project .button-container a.project-
   padding: 8px 16px;
   color: #000;
   background-color: #f1f1f1;
+  text-align: center;
   text-decoration: none;
 }
 body main section#projects .content.active .project .button-container a.project-button:hover {

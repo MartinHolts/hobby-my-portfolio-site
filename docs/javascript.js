@@ -67,3 +67,45 @@ function addClickAnimation(buttonId) {
 		button.classList.remove('clicked');
 	}, 200);
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	const sections = document.querySelectorAll('section[id]');
+	const navLinks = document.querySelectorAll('.header-right a');
+
+	function scrollSpy() {
+		let scrollY = window.scrollY;
+
+		sections.forEach(current => {
+			const sectionHeight = current.offsetHeight;
+			const sectionTop = current.offsetTop - 50; // Adjust offset as needed
+
+			sectionId = current.getAttribute('id');
+
+			if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href') === `#${sectionId}`) {
+						link.classList.add('active');
+					}
+				});
+			}
+		});
+
+		// Activate "Contact" link specifically when scrolling near the contact section
+		const contactSection = document.getElementById('contact');
+		const contactTop = contactSection.offsetTop - 350; // Adjust offset as needed
+
+		if (scrollY > contactTop) {
+			navLinks.forEach(link => {
+				link.classList.remove('active');
+				if (link.getAttribute('href') === '#contact') {
+					link.classList.add('active');
+				}
+			});
+		}
+	}
+
+	window.addEventListener('scroll', scrollSpy);
+});
+

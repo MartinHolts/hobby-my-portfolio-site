@@ -1,8 +1,9 @@
-/* Color Variables */
 $text-primary: #333;
 $text-black: #000;
+$text-white: #fff;
 $header: #f1f1f1;
 $background-white: #fff;
+$background-black: #000;
 
 $button-hover-background: #ccc;
 
@@ -11,14 +12,11 @@ $header-shadow-closer: rgba(0, 0, 0, 0.16);
 $header-shadow-further: rgba(0, 0, 0, 0.12);
 
 $project-button-background: #f1f1f1;
-$pagination-background-hover: #ddd;
+$pagination-hover-background: #ddd;
 $pagination-active: #4CAF50;
 
-$contact-button-text: #fff;
-$contact-button-hover: #000;
-$contact-button-background: #000;
 $contact-form-border: #ccc;
-/* Global styles */
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -163,7 +161,7 @@ body {
 						text-decoration: none;
 				
 						&:hover:not(.active) {
-							background-color: $pagination-background-hover;
+							background-color: $pagination-hover-background;
 						}
 						&.active {
 							color: white;
@@ -197,12 +195,12 @@ body {
 						display: inline-block;
 						padding: 8px 16px;
 						border: none;
-						color: $contact-button-text;
-						background-color: $contact-button-background;
+						color: $text-white;
+						background-color: $background-black;
 						cursor: pointer;
 						
 						&:hover {
-							color: $contact-button-hover;
+							color: $text-black;
 							background-color: $button-hover-background;
 						}
 					}
@@ -219,11 +217,11 @@ body {
 		}
 	}
 	footer {
-		padding-top: 16px !important;
-		padding-bottom: 16px !important;
-		color: #fff !important;
-		background-color: #000 !important;
-		text-align: center !important;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		color: $text-white;
+		background-color: $background-black;
+		text-align: center;
 		
 		p {
 			margin-top: 15px;

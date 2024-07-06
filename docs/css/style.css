@@ -38,7 +38,7 @@ body header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1240px;
+  max-width: 1540px; /* adding padding width on both sides */
   height: 54px;
   padding: 0 20px;
   margin: 0 auto;
@@ -63,7 +63,7 @@ body header nav .header-left a.active, body header nav .header-right a.active {
   border-color: #000;
 }
 body main {
-  max-width: 1240px;
+  max-width: 1540px; /* adding padding width on both sides */
   padding: 0 20px 20px 20px;
   margin: 0 auto;
 }
@@ -112,6 +112,7 @@ body main section#projects .content.active .project .button-container a.project-
   padding: 8px 16px;
   color: #000;
   background-color: #f1f1f1;
+  user-select: none;
   text-align: center;
   text-decoration: none;
 }

@@ -57,7 +57,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			max-width: calc(1200px + 40px);
+			max-width: calc(1500px + 40px); /* adding padding width on both sides */
 			height: 54px;
 			padding: 0 20px;
 			margin: 0 auto;
@@ -86,7 +86,7 @@ body {
 		}
 	}
 	main {
-		max-width: 1240px;
+		max-width: calc(1500px + 40px); /* adding padding width on both sides */
 		padding: 0 20px 20px 20px;
 		margin: 0 auto;
 
@@ -138,6 +138,7 @@ body {
 									padding: 8px 16px;
 									color: $text-black;
 									background-color: $project-button-background;
+									user-select: none;
 									text-align: center;
 									text-decoration: none;
 

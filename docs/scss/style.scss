@@ -1,21 +1,22 @@
 /* Color Variables */
 $text-primary: #333;
+$text-black: #000;
+$header: #f1f1f1;
 $background-white: #fff;
 
-$text-black: #000;
-$border-black: #000;
-
-$form-border: #ccc;
-$button-background: #000;
-$button-hover-color: #000;
 $button-hover-background: #ccc;
 
+$header-border: #000;
 $header-shadow-closer: rgba(0, 0, 0, 0.16);
 $header-shadow-further: rgba(0, 0, 0, 0.12);
 
+$project-button-hover: #f1f1f1;
 $pagination-background-hover: #ddd;
 $pagination-active: #4CAF50;
 
+$contact-button-background: #000;
+$contact-button-hover: #000;
+$contact-form-border: #ccc;
 /* Global styles */
 * {
 	box-sizing: border-box;
@@ -74,10 +75,10 @@ body {
 						margin-left: 46px;
 					}
 					&:hover {
-						border-color: $border-black;
+						border-color: $header-border;
 					}
 					&.active {
-						border-color: $border-black;
+						border-color: $header-border;
 					}
 				}
 			}
@@ -105,7 +106,7 @@ body {
 						margin-bottom: 16px;
 						gap: 16px;
 						
-						.gallery {
+						.project {
 							float: left;
 							flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
 							a {
@@ -128,7 +129,7 @@ body {
 							p.description {
 								margin: 15px 0;
 							}
-							a.gallery-button {
+							a.project-button {
 								display: block;
 								float: left;
 								width: fit-content;
@@ -136,11 +137,11 @@ body {
 								padding: 8px 16px;
 								margin-right: 10px;
 								color: #000;
-								background-color: #f1f1f1;
+								background-color: $project-button-hover;
 								text-decoration: none;
 
 								&:hover {
-									background-color: #ccc;
+									background-color: $button-hover-background;
 								}
 							}
 						}
@@ -180,7 +181,7 @@ body {
 					input, textarea {
 						width: 100%;
 						padding: 8px;
-						border: 1px solid $form-border;
+						border: 1px solid $contact-form-border;
 					}
 					input {
 						margin-bottom: 16px;
@@ -194,11 +195,11 @@ body {
 						padding: 8px 16px;
 						border: none;
 						color: #fff;
-						background-color: $button-background;
+						background-color: $contact-button-background;
 						cursor: pointer;
 						
 						&:hover {
-							color: $button-hover-color;
+							color: $contact-button-hover;
 							background-color: $button-hover-background;
 						}
 					}
@@ -207,7 +208,7 @@ body {
 			h3 {
 				padding-bottom: 16px;
 				margin-bottom: 31px;
-				border-bottom: 1px solid #f1f1f1;
+				border-bottom: 1px solid $header;
 				font-family: "Segoe UI", Arial, sans-serif;
 				font-size: 24px;
 				font-weight: 400;

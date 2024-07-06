@@ -13,14 +13,8 @@ $button-hover-background: #ccc;
 $header-shadow-closer: rgba(0, 0, 0, 0.16);
 $header-shadow-further: rgba(0, 0, 0, 0.12);
 
-$border-primary: #9EA660;
-$text-link: #3A4024;
-$border-link-hover: #586A8C;
-$shadow: rgba(0, 0, 0, 0.1);
-$border-gallery-hover: #777;
+$pagination-background-hover: #ddd;
 $pagination-active: #4CAF50;
-$background-hover: #ddd;
-$form-border-focus: #586A8C;
 
 /* Global styles */
 * {
@@ -165,7 +159,7 @@ body {
 						text-decoration: none;
 				
 						&:hover:not(.active) {
-							background-color: $background-hover;
+							background-color: $pagination-background-hover;
 						}
 						&.active {
 							color: white;

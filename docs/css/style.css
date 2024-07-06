@@ -83,7 +83,7 @@ body main section#projects .content.active {
   gap: 16px;
 }
 body main section#projects .content.active .project {
-  flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
+  flex: 1 1 calc(25% - 16px); /* Removing gap from last element in both rows */
 }
 body main section#projects .content.active .project a img {
   display: block;

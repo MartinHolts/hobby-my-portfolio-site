@@ -108,7 +108,7 @@ body {
 						gap: 16px;
 						
 						.project {
-							flex: 1 1 calc(33.333% - 16px); /* Removing gap from last element in both rows */
+							flex: 1 1 calc(25% - 16px); /* Removing gap from last element in both rows */
 							a {
 								img {
 									display: block;

@@ -14,8 +14,9 @@ $project-button-hover: #f1f1f1;
 $pagination-background-hover: #ddd;
 $pagination-active: #4CAF50;
 
-$contact-button-background: #000;
+$contact-button-text: #fff;
 $contact-button-hover: #000;
+$contact-button-background: #000;
 $contact-form-border: #ccc;
 /* Global styles */
 * {
@@ -136,7 +137,7 @@ body {
 								box-sizing: border-box;
 								padding: 8px 16px;
 								margin-right: 10px;
-								color: #000;
+								color: $text-black;
 								background-color: $project-button-hover;
 								text-decoration: none;
 
@@ -155,7 +156,7 @@ body {
 					a {
 						float: left;
 						padding: 8px 16px;
-						color: black;
+						color: $text-black;
 						user-select: none;
 						text-decoration: none;
 				
@@ -194,7 +195,7 @@ body {
 						display: inline-block;
 						padding: 8px 16px;
 						border: none;
-						color: #fff;
+						color: $contact-button-text;
 						background-color: $contact-button-background;
 						cursor: pointer;
 						

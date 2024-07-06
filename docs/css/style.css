@@ -126,7 +126,7 @@ body main section#projects .pagination {
 body main section#projects .pagination a {
   float: left;
   padding: 8px 16px;
-  color: black;
+  color: #000;
   user-select: none;
   text-decoration: none;
 }

@@ -64,7 +64,7 @@ body header nav .header-left a.active, body header nav .header-right a.active {
 }
 body main {
   max-width: 1540px; /* adding padding width on both sides */
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 48px 20px;
   margin: 0 auto;
 }
 body main section:first-of-type h3 {
@@ -176,6 +176,17 @@ body main section h3 {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
+}
+body footer {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  text-align: center !important;
+}
+body footer p {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

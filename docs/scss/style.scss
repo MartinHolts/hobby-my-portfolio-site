@@ -87,7 +87,7 @@ body {
 	}
 	main {
 		max-width: calc(1500px + 40px); /* adding padding width on both sides */
-		padding: 0 20px 20px 20px;
+		padding: 0 20px 48px 20px;
 		margin: 0 auto;
 
 		section {
@@ -216,6 +216,18 @@ body {
 				font-size: 24px;
 				font-weight: 400;
 			}
+		}
+	}
+	footer {
+		padding-top: 16px !important;
+		padding-bottom: 16px !important;
+		color: #fff !important;
+		background-color: #000 !important;
+		text-align: center !important;
+		
+		p {
+			margin-top: 15px;
+			margin-bottom: 15px;
 		}
 	}
 }

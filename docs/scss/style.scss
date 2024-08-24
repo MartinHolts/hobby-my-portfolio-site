@@ -221,7 +221,17 @@ body {
 		color: $text-white;
 		background-color: $background-black;
 		text-align: center;
-		
+		.icons {
+			display: flex;
+			justify-content: center;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			
+			a img {
+				display: block;
+				width: 45px;
+			}
+		}
 		p {
 			margin-top: 15px;
 			margin-bottom: 15px;

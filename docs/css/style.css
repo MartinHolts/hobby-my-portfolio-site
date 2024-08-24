@@ -182,6 +182,16 @@ body footer {
   background-color: #000;
   text-align: center;
 }
+body footer .icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body footer .icons a img {
+  display: block;
+  width: 45px;
+}
 body footer p {
   margin-top: 15px;
   margin-bottom: 15px;

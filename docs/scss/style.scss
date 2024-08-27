@@ -12,7 +12,7 @@ $header-shadow-further: rgba(0, 0, 0, 0.12);
 
 $project-button-background: #f1f1f1;
 $pagination-hover-background: #ddd;
-$pagination-active: #4CAF50;
+$pagination-active: #000;
 
 $contact-form-border: #ccc;
 
@@ -174,8 +174,16 @@ body {
 				}
 			}
 			&#contact {
-				p {
-					margin-bottom: 15px;
+				.texts-container {
+					display: flex;
+					justify-content: space-between;
+					
+					p {
+						margin-bottom: 15px;
+					}
+					.icon-container {
+						display: flex;
+					}
 				}
 				form {
 					input, textarea {

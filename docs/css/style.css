@@ -134,14 +134,21 @@ body main section#projects .pagination a:hover:not(.active) {
 }
 body main section#projects .pagination a.active {
   color: white;
-  background-color: #4CAF50;
+  background-color: #000;
 }
 body main section#projects .pagination a.clicked {
   color: white;
-  background-color: #4CAF50;
+  background-color: #000;
 }
-body main section#contact p {
+body main section#contact .texts-container {
+  display: flex;
+  justify-content: space-between;
+}
+body main section#contact .texts-container p {
   margin-bottom: 15px;
+}
+body main section#contact .texts-container .icon-container {
+  display: flex;
 }
 body main section#contact form input, body main section#contact form textarea {
   width: 100%;

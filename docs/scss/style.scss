@@ -181,8 +181,12 @@ body {
 					p {
 						margin-bottom: 15px;
 					}
-					.icon-container {
+					.icons-container {
 						display: flex;
+						
+						.icon-container:first-of-type {
+							margin-right: 32px;
+						}
 					}
 				}
 				form {

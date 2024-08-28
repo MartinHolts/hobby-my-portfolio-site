@@ -147,8 +147,11 @@ body main section#contact .texts-container {
 body main section#contact .texts-container p {
   margin-bottom: 15px;
 }
-body main section#contact .texts-container .icon-container {
+body main section#contact .texts-container .icons-container {
   display: flex;
+}
+body main section#contact .texts-container .icons-container .icon-container:first-of-type {
+  margin-right: 32px;
 }
 body main section#contact form input, body main section#contact form textarea {
   width: 100%;

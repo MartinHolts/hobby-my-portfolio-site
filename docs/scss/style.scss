@@ -176,6 +176,7 @@ body {
 			&#contact {
 				.texts-container {
 					display: flex;
+					flex-wrap: wrap;
 					justify-content: space-between;
 					
 					p {
@@ -183,16 +184,20 @@ body {
 					}
 					.icons-container {
 						display: flex;
+						flex-wrap: wrap;
 						
-						.icon-container {
+						.icon-and-text {
 							display: flex;
 
 							i {
 								margin-right: 5px;
 								user-select: none;
 							}
+							span {
+								margin-bottom: 15px;
+							}
 						}
-						.icon-container:first-of-type {
+						.icon-and-text:first-of-type {
 							margin-right: 32px;
 						}
 					}

@@ -142,6 +142,7 @@ body main section#projects .pagination a.clicked {
 }
 body main section#contact .texts-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 body main section#contact .texts-container p {
@@ -149,15 +150,19 @@ body main section#contact .texts-container p {
 }
 body main section#contact .texts-container .icons-container {
   display: flex;
+  flex-wrap: wrap;
 }
-body main section#contact .texts-container .icons-container .icon-container {
+body main section#contact .texts-container .icons-container .icon-and-text {
   display: flex;
 }
-body main section#contact .texts-container .icons-container .icon-container i {
+body main section#contact .texts-container .icons-container .icon-and-text i {
   margin-right: 5px;
   user-select: none;
 }
-body main section#contact .texts-container .icons-container .icon-container:first-of-type {
+body main section#contact .texts-container .icons-container .icon-and-text span {
+  margin-bottom: 15px;
+}
+body main section#contact .texts-container .icons-container .icon-and-text:first-of-type {
   margin-right: 32px;
 }
 body main section#contact form input, body main section#contact form textarea {

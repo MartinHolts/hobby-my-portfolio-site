@@ -184,6 +184,9 @@ body {
 					.icons-container {
 						display: flex;
 						
+						.icon-container {
+							display: flex;
+						}
 						.icon-container:first-of-type {
 							margin-right: 32px;
 						}

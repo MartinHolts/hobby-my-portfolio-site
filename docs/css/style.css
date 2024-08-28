@@ -153,6 +153,10 @@ body main section#contact .texts-container .icons-container {
 body main section#contact .texts-container .icons-container .icon-container {
   display: flex;
 }
+body main section#contact .texts-container .icons-container .icon-container i {
+  margin-right: 5px;
+  user-select: none;
+}
 body main section#contact .texts-container .icons-container .icon-container:first-of-type {
   margin-right: 32px;
 }

@@ -186,6 +186,11 @@ body {
 						
 						.icon-container {
 							display: flex;
+
+							i {
+								margin-right: 5px;
+								user-select: none;
+							}
 						}
 						.icon-container:first-of-type {
 							margin-right: 32px;

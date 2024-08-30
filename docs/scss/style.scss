@@ -99,11 +99,16 @@ body {
 				p {
 					margin: 15px 0;
 				}
-				.download-button {
+				a[download] {
+					display: block;
+					width: fit-content;
 					padding: 8px 16px;
 					border: none;
-					cursor: pointer;
+					color: #000;
+					background-color: #f1f1f1;
+					user-select: none;
 					white-space: nowrap;
+					text-decoration: none;
 						
 					&:hover {
 						background-color: $button-hover-background;

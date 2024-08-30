@@ -34,45 +34,11 @@
 				a whole and independently acquiring the additional knowledge necessary for its completion. I thrive on tackling challenges
 				and am committed to continually learning new technologies to enhance my skills.</p>
 
-			<button class="download-button">
+			<a href="cv/Martin Holtsmeier CV - ENG.pdf" download>
 				<div class="icon-and-text">
 					<i class="material-icons">download</i>
 					<span>Download Resume</span>
 				</div>
-			</button>
-
-			<a href="cv/1.png" download target="_blank">
-				<div class="icon-and-text">
-					<i class="material-icons">download</i>
-					<span>Download Resume</span>
-				</div>
-			</a>
-
-			<!-- Button to view the resume in a new tab -->
-			<a href="cv/test.pdf" target="_blank">
-				<div class="icon-and-text">
-					<i class="material-icons">visibility</i>
-					<span>View Resume</span>
-				</div>
-			</a>
-
-			<!-- Button to download the resume -->
-			<a href="cv/test.pdf" download="test.pdf">
-				<div class="icon-and-text">
-					<i class="material-icons">download</i>
-					<span>Download Resume</span>
-				</div>
-			</a>
-
-			<a id="downloadLink" href="cv/test.pdf" target="_blank">
-				<div class="icon-and-text">
-					<i class="material-icons">download</i>
-					<span>Download Resume</span>
-				</div>
-			</a>
-
-			<a href="cv/1.png" download>
-				<img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
 			</a>
 
 		</section>
@@ -229,23 +195,3 @@
 </body>
 
 </html>
-
-<script>
-	document.getElementById('downloadLink').addEventListener('click', function (event) {
-		event.preventDefault(); // Prevent default link behavior
-
-		// Create a new anchor element dynamically
-		const link = document.createElement('a');
-		link.href = 'cv/test.pdf';  // URL of the file to download
-		link.setAttribute('download', 'Martin_Holtsmeier_Resume.pdf'); // Suggested filename for download
-
-		// Append the anchor to the document
-		document.body.appendChild(link);
-
-		// Programmatically click the anchor to trigger the download
-		link.click();
-
-		// Remove the anchor from the document after triggering download
-		document.body.removeChild(link);
-	});
-</script>

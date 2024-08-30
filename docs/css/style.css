@@ -75,16 +75,21 @@ body main section:not(:first-of-type) h3 {
 body main section#about p {
   margin: 15px 0;
 }
-body main section#about .download-button {
+body main section#about a[download] {
+  display: block;
+  width: fit-content;
   padding: 8px 16px;
   border: none;
-  cursor: pointer;
+  color: #000;
+  background-color: #f1f1f1;
+  user-select: none;
   white-space: nowrap;
+  text-decoration: none;
 }
-body main section#about .download-button:hover {
+body main section#about a[download]:hover {
   background-color: #ccc;
 }
-body main section#about .download-button .icon-and-text {
+body main section#about a[download] .icon-and-text {
   display: flex;
   align-items: center;
 }

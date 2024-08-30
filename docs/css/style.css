@@ -49,6 +49,7 @@ body header nav .header-left a, body header nav .header-right a {
   border-bottom: 1px solid transparent;
   color: #000;
   user-select: none;
+  white-space: nowrap;
   text-decoration: none;
 }
 body header nav .header-left a:not(:first-of-type), body header nav .header-right a:not(:first-of-type) {
@@ -70,6 +71,22 @@ body main section:first-of-type h3 {
 }
 body main section:not(:first-of-type) h3 {
   padding-top: 58px;
+}
+body main section#about p {
+  margin: 15px 0;
+}
+body main section#about .download-button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+body main section#about .download-button:hover {
+  background-color: #ccc;
+}
+body main section#about .download-button .icon-and-text {
+  display: flex;
+  align-items: center;
 }
 body main section#projects .content {
   display: none;

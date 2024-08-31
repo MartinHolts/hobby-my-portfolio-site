@@ -68,6 +68,8 @@ body main {
 }
 body main section#heading-hero img {
   display: block;
+  width: 1500px;
+  height: 400px;
   padding-top: 54px;
 }
 body main section h3 {
@@ -220,6 +222,8 @@ body main section#contact form button:hover {
 }
 body main section#footer-hero img {
   display: block;
+  width: 1500px;
+  height: 400px;
   padding-top: 48px;
 }
 body footer {

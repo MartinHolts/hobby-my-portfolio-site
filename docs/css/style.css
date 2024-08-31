@@ -63,14 +63,21 @@ body header nav .header-left a.active, body header nav .header-right a.active {
 }
 body main {
   max-width: 1540px; /* adding padding width on both sides */
-  padding: 0 20px 48px 20px;
+  padding: 0 20px 8px 20px;
   margin: 0 auto;
 }
-body main section:first-of-type h3 {
-  padding-top: 106px; /* adds heading height to normal padding */
+body main section#heading-hero img {
+  display: block;
+  padding-top: 54px;
 }
-body main section:not(:first-of-type) h3 {
+body main section h3 {
   padding-top: 58px;
+  padding-bottom: 16px;
+  margin-bottom: 31px;
+  border-bottom: 1px solid #f1f1f1;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 body main section#about p {
   margin: 15px 0;
@@ -211,13 +218,9 @@ body main section#contact form button:hover {
   color: #000;
   background-color: #ccc;
 }
-body main section h3 {
-  padding-bottom: 16px;
-  margin-bottom: 31px;
-  border-bottom: 1px solid #f1f1f1;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+body main section#footer-hero img {
+  display: block;
+  padding-top: 48px;
 }
 body footer {
   padding-top: 16px;

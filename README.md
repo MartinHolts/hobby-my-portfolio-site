@@ -4,7 +4,7 @@ This repository hosts an ongoing project aimed at constructing my personal portf
 
 ## Access the Project
 
-You can access the project and explore its features here: **[https://martinholts.github.io/hobby-project-my-portfolio-site/](https://martinholts.github.io/hobby-project-my-portfolio-site/)**
+You can access the project and explore its features here: **[https://martinholts.github.io/hobby-my-portfolio-site/](https://martinholts.github.io/hobby-my-portfolio-site/)**
 
 ## Images
 

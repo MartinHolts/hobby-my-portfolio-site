@@ -8,5 +8,5 @@ You can access the project and explore its features here: **[https://martinholts
 
 ## Images
 
-![image](https://github.com/MartinHolts/hobby-project-my-portfolio-site/assets/16961661/4f66de02-9a02-4cbb-91aa-b81a44b85b21)
+![image](https://github.com/MartinHolts/hobby-my-portfolio-site/assets/16961661/4f66de02-9a02-4cbb-91aa-b81a44b85b21)
  

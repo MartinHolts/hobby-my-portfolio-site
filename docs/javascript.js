@@ -99,25 +99,46 @@ function handleFormSubmit(event) {
 }
 
 function scrollSpy() {
-	const sections = document.querySelectorAll('section[id]');
+	// Selecting Sections and Navigation Links
 	const navLinks = document.querySelectorAll('.header-right a');
+	const sections = document.querySelectorAll('section[id]');
+
+	// Capturing Scroll Position
 	let scrollY = window.scrollY;
 
+	// Loop Through Sections
 	sections.forEach(current => {
 		const sectionHeight = current.offsetHeight;
 		const sectionTop = current.offsetTop - 50; // Adjust offset as needed
 		const sectionId = current.getAttribute('id');
 
-		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-			navLinks.forEach(link => {
-				link.classList.remove('active');
-				if (link.getAttribute('href') === `#${sectionId}`) {
-					link.classList.add('active');
-				}
-			});
+		// Handling "About" for both heading-hero and about sections
+		if (sectionId === 'heading-hero' || sectionId === 'about') {
+			const aboutSectionTop = document.getElementById('heading-hero').offsetTop - 50;
+			const aboutSectionHeight = document.getElementById('about').offsetTop + document.getElementById('about').offsetHeight - aboutSectionTop;
+
+			if (scrollY > aboutSectionTop && scrollY <= aboutSectionTop + aboutSectionHeight) {
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href') === '#about') {
+						link.classList.add('active');
+					}
+				});
+			}
+		} else {
+			// Checking If the Section is in View
+			if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href') === `#${sectionId}`) {
+						link.classList.add('active');
+					}
+				});
+			}
 		}
 	});
 
+	// Special Case for the Contact Section
 	// Activate "Contact" link specifically when scrolling near the contact section
 	const contactSection = document.getElementById('contact');
 	const contactTop = contactSection.offsetTop - 350; // Adjust offset as needed

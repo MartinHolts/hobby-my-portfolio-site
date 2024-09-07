@@ -96,24 +96,20 @@ function handleFormSubmit(event) {
     });
 }
 function scrollSpy() {
-    // Selecting Sections and Navigation Links
     const navLinks = document.querySelectorAll('.header-right a');
     const sections = document.querySelectorAll('section[id]');
-    // Capturing Scroll Position
     let scrollY = window.scrollY;
-    // Loop Through Sections
-    sections.forEach(current => {
+    sections.forEach((current) => {
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50; // Adjust offset as needed
+        const sectionTop = current.offsetTop - 50;
         const sectionId = current.getAttribute('id');
-        // Handling "About" for both heading-hero and about sections
         if (sectionId === 'heading-hero' || sectionId === 'about') {
             const headingHero = document.getElementById('heading-hero');
             const aboutSection = document.getElementById('about');
             const aboutSectionTop = headingHero.offsetTop - 50;
             const aboutSectionHeight = aboutSection.offsetTop + aboutSection.offsetHeight - aboutSectionTop;
             if (scrollY > aboutSectionTop && scrollY <= aboutSectionTop + aboutSectionHeight) {
-                navLinks.forEach(link => {
+                navLinks.forEach((link) => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === '#about') {
                         link.classList.add('active');
@@ -122,9 +118,8 @@ function scrollSpy() {
             }
         }
         else {
-            // Checking If the Section is in View
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
+                navLinks.forEach((link) => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === `#${sectionId}`) {
                         link.classList.add('active');
@@ -133,11 +128,10 @@ function scrollSpy() {
             }
         }
     });
-    // Special Case for the Contact Section
     const contactSection = document.getElementById('contact');
-    const contactTop = contactSection.offsetTop - 350; // Adjust offset as needed
+    const contactTop = contactSection.offsetTop - 350;
     if (scrollY > contactTop) {
-        navLinks.forEach(link => {
+        navLinks.forEach((link) => {
             link.classList.remove('active');
             if (link.getAttribute('href') === '#contact') {
                 link.classList.add('active');

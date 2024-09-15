@@ -89,11 +89,15 @@ body {
 		margin: 0 auto;
 
 		section {
-			&#heading-hero img {
-				display: block;
-				width: 1500px;
-				height: 400px;
-				padding-top: 54px;
+			&#heading-hero {
+				overflow: hidden;
+				
+				img {
+					display: block;
+					width: 1500px;
+					height: 400px;
+					padding-top: 54px;
+				}
 			}
 			& h3 {
 				padding-top: 58px;
@@ -264,11 +268,15 @@ body {
 					}
 				}
 			}
-			&#footer-hero img {
-				display: block;
-				width: 1500px;
-				height: 400px;
-				padding-top: 48px;
+			&#footer-hero {
+				overflow: hidden;
+				
+				img {
+					display: block;
+					width: 1500px;
+					height: 400px;
+					padding-top: 48px;
+				}
 			}
 		}
 	}

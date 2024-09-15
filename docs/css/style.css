@@ -44,6 +44,11 @@ body header nav {
 body header nav .header-left, body header nav .header-right {
   display: flex;
 }
+@media (max-width: 680px) {
+  body header nav .header-left.header-right, body header nav .header-right.header-right {
+    display: none;
+  }
+}
 body header nav .header-left a, body header nav .header-right a {
   height: 23px;
   border-bottom: 1px solid transparent;

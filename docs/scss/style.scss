@@ -150,6 +150,19 @@ body {
 						
 						.project {
 							flex: 1 1 calc(25% - 16px); /* Removing gap from last element in both rows */
+
+							@media (max-width: 1100px) {
+								& {
+									flex: 1 1 calc(50% - 16px); /* Removing gap from last element in both rows */
+								}
+							}
+
+							@media (max-width: 600px) {
+								& {
+									flex: 1 1 calc(100% - 16px); /* Removing gap from last element in both rows */
+								}
+							}
+							
 							a {
 								img {
 									display: block;

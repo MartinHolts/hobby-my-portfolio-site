@@ -122,6 +122,16 @@ body main section#projects .content.active {
 body main section#projects .content.active .project {
   flex: 1 1 calc(25% - 16px); /* Removing gap from last element in both rows */
 }
+@media (max-width: 1100px) {
+  body main section#projects .content.active .project {
+    flex: 1 1 calc(50% - 16px); /* Removing gap from last element in both rows */
+  }
+}
+@media (max-width: 600px) {
+  body main section#projects .content.active .project {
+    flex: 1 1 calc(100% - 16px); /* Removing gap from last element in both rows */
+  }
+}
 body main section#projects .content.active .project a img {
   display: block;
   width: 100%;

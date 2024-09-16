@@ -1,19 +1,24 @@
 "use strict";
+
 document.addEventListener('DOMContentLoaded', init);
 function init() {
     const pagination = createPaginationHandler(1, 2);
     pagination.showPage(1);
+
     // Attach event listeners
     const paginationElement = document.querySelector('.pagination');
     if (paginationElement) {
         paginationElement.addEventListener("click", pagination.handlePaginationClick);
     }
+
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', handleFormSubmit);
     }
+
     window.addEventListener('scroll', scrollSpy);
 }
+
 function createPaginationHandler(initialPage, totalPages) {
     let currentPage = initialPage;
     function prevPage() {
@@ -77,24 +82,26 @@ function createPaginationHandler(initialPage, totalPages) {
         showPage,
     };
 }
+
 function handleFormSubmit(event) {
     event.preventDefault();
     const form = event.target;
     // Collect form data
     const formData = {
-        Name: form.elements.namedItem('Name').value,
-        Email: form.elements.namedItem('Email').value,
-        Subject: form.elements.namedItem('Subject').value,
-        Message: form.elements.namedItem('Message').value
+        name: form.elements.namedItem('Name').value,
+        email: form.elements.namedItem('Email').value,
+        subject: form.elements.namedItem('Subject').value,
+        message: form.elements.namedItem('Message').value
     };
     // Send the email using EmailJS
     emailjs.send('service_vgucitn', 'template_aluilhb', formData)
         .then(function (response) {
-        alert('Message sent successfully!');
-    }, function (error) {
-        alert('Failed to send message, please try again later.');
-    });
+            alert('Message sent successfully!');
+        }, function (error) {
+            alert('Failed to send message, please try again later.');
+        });
 }
+
 function scrollSpy() {
     const navLinks = document.querySelectorAll('.header-right a');
     const sections = document.querySelectorAll('section[id]');

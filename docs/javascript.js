@@ -88,10 +88,10 @@ function handleFormSubmit(event) {
     const form = event.target;
     // Collect form data
     const formData = {
-        name: form.elements.namedItem('Name').value,
-        email: form.elements.namedItem('Email').value,
-        subject: form.elements.namedItem('Subject').value,
-        message: form.elements.namedItem('Message').value
+        name: form.elements.namedItem('name').value,
+        email: form.elements.namedItem('email').value,
+        subject: form.elements.namedItem('subject').value,
+        message: form.elements.namedItem('message').value
     };
     // Send the email using EmailJS
     emailjs.send('service_vgucitn', 'template_aluilhb', formData)

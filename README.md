@@ -8,4 +8,5 @@ You can access the project and explore its features here: **[https://martinholts
 
 ## Images
 
-![image](https://github.com/user-attachments/assets/d07745ec-6e76-41d1-aeb2-4b101beebffb)
+![image](https://github.com/user-attachments/assets/7e651bd1-4952-40f4-ac68-aa3896cdabfd)
+

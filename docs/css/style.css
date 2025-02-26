@@ -89,20 +89,20 @@ body main section h3 {
   font-size: 24px;
   font-weight: 400;
 }
-body main section#about div {
+body main section#about div#about-info {
   display: flex;
 }
-body main section#about div img {
+body main section#about div#about-info img {
   width: 300px;
 }
-body main section#about div div#description-and-download {
+body main section#about div#about-info div#description-and-download {
   display: block;
   margin-left: 31px;
 }
-body main section#about div div#description-and-download p {
+body main section#about div#about-info div#description-and-download p {
   margin: 15px 0;
 }
-body main section#about div div#description-and-download a[download] {
+body main section#about div#about-info div#description-and-download a[download] {
   display: block;
   width: fit-content;
   padding: 8px 16px;
@@ -113,10 +113,10 @@ body main section#about div div#description-and-download a[download] {
   white-space: nowrap;
   text-decoration: none;
 }
-body main section#about div div#description-and-download a[download]:hover {
+body main section#about div#about-info div#description-and-download a[download]:hover {
   background-color: #ccc;
 }
-body main section#about div div#description-and-download a[download] .icon-and-text {
+body main section#about div#about-info div#description-and-download a[download] .icon-and-text {
   display: flex;
   align-items: center;
 }

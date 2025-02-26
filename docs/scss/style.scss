@@ -114,8 +114,7 @@ body {
 				font-size: 24px;
 				font-weight: 400;
 			}
-			&#about {
-				div#about-info {
+			&#about > div#about-info {
 					display: flex;
 
 					img {
@@ -149,7 +148,6 @@ body {
 						}
 					}
 				}
-			}
 			&#projects {
 				.content {
 					display: none;

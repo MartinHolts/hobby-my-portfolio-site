@@ -96,6 +96,7 @@ body main section#about div img {
   width: 300px;
 }
 body main section#about div div {
+  display: block;
   margin-left: 31px;
 }
 body main section#about div div p {

@@ -89,10 +89,19 @@ body main section h3 {
   font-size: 24px;
   font-weight: 400;
 }
-body main section#about p {
+body main section#about div {
+  display: flex;
+}
+body main section#about div img {
+  width: 300px;
+}
+body main section#about div div {
+  margin-left: 31px;
+}
+body main section#about div div p {
   margin: 15px 0;
 }
-body main section#about a[download] {
+body main section#about div div a[download] {
   display: block;
   width: fit-content;
   padding: 8px 16px;
@@ -103,10 +112,10 @@ body main section#about a[download] {
   white-space: nowrap;
   text-decoration: none;
 }
-body main section#about a[download]:hover {
+body main section#about div div a[download]:hover {
   background-color: #ccc;
 }
-body main section#about a[download] .icon-and-text {
+body main section#about div div a[download] .icon-and-text {
   display: flex;
   align-items: center;
 }

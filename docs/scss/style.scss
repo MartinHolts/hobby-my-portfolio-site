@@ -115,26 +115,37 @@ body {
 				font-weight: 400;
 			}
 			&#about {
-				p {
-					margin: 15px 0;
-				}
-				a[download] {
-					display: block;
-					width: fit-content;
-					padding: 8px 16px;
-					border: none;
-					color: #000;
-					background-color: #f1f1f1;
-					user-select: none;
-					white-space: nowrap;
-					text-decoration: none;
-						
-					&:hover {
-						background-color: $button-hover-background;
+				div {
+					display: flex;
+
+					img {
+						width: 300px;
 					}
-					.icon-and-text {
-						display: flex;
-						align-items: center;
+					div {
+						margin-left: 31px;
+						
+						p {
+							margin: 15px 0;
+						}
+						a[download] {
+							display: block;
+							width: fit-content;
+							padding: 8px 16px;
+							border: none;
+							color: #000;
+							background-color: #f1f1f1;
+							user-select: none;
+							white-space: nowrap;
+							text-decoration: none;
+								
+							&:hover {
+								background-color: $button-hover-background;
+							}
+							.icon-and-text {
+								display: flex;
+								align-items: center;
+							}
+						}
 					}
 				}
 			}

@@ -91,6 +91,12 @@ body main section h3 {
 }
 body main section#about > div#about-info {
   display: flex;
+  align-items: flex-start;
+}
+@media (max-width: 720px) {
+  body main section#about > div#about-info {
+    flex-direction: column;
+  }
 }
 body main section#about > div#about-info img {
   width: 300px;
@@ -98,6 +104,11 @@ body main section#about > div#about-info img {
 body main section#about > div#about-info div#description-and-download {
   display: block;
   margin-left: 31px;
+}
+@media (max-width: 720px) {
+  body main section#about > div#about-info div#description-and-download {
+    margin-left: 0;
+  }
 }
 body main section#about > div#about-info div#description-and-download p {
   margin: 15px 0;

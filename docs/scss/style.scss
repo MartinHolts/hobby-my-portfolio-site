@@ -116,6 +116,13 @@ body {
 			}
 			&#about > div#about-info {
 					display: flex;
+					align-items: flex-start;
+
+					@media (max-width: 720px) {
+						& {
+							flex-direction: column;
+						}
+					}
 
 					img {
 						width: 300px;
@@ -123,6 +130,12 @@ body {
 					div#description-and-download {
 						display: block;
 						margin-left: 31px;
+
+						@media (max-width: 720px) {
+							& {
+								margin-left: 0;
+							}
+						}
 
 						p {
 							margin: 15px 0;

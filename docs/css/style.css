@@ -161,6 +161,9 @@ body main section#projects .content.active .project a img {
   width: 100%;
   height: auto;
 }
+body main section#projects .content.active .project a img.darker {
+  filter: brightness(96%);
+}
 body main section#projects .content.active .project h2 {
   margin-top: 10px;
   font-family: "Segoe UI", Arial, sans-serif;

@@ -195,6 +195,9 @@ body {
 									width: 100%;
 									height: auto;
 								}
+								img.darker {
+    								filter: brightness(96%);
+								}
 							}
 							h2 {
 								margin-top: 10px;
